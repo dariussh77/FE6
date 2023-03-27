@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P25 JS DOM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/dataKartu.js"></script>
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+    <section id="kartu1">
+        <h1 class="raudonasTekstas didelisTekstas centruotasTekstas">Bandymas su innerHTML</h1>
+        <div class="flex flex-wrap justify-center gap-2">
+            <div class="kortele1">
+                <h3>Kortelės pavadinimas</h3>
+                <img src="https://picsum.photos/id/949/600/400" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rem laboriosam sequi accusamus repellendus necessitatibus aliquam, officiis natus, voluptas at mollitia. Voluptatem maxime atque neque, saepe aliquid maiores sed totam.</p>
+            </div>
+            <div class="kortele1">
+                <h3>Kortelės pavadinimas</h3>
+                <img src="https://picsum.photos/id/1067/600/400" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rem laboriosam sequi accusamus repellendus necessitatibus aliquam, officiis natus, voluptas at mollitia. Voluptatem maxime atque neque, saepe aliquid maiores sed totam.</p>
+            </div>
+            <div class="kortele1">
+                <h3>Kortelės pavadinimas</h3>
+                <img src="https://picsum.photos/id/237/600/400" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum rem laboriosam sequi accusamus repellendus necessitatibus aliquam, officiis natus, voluptas at mollitia. Voluptatem maxime atque neque, saepe aliquid maiores sed totam.</p>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section id="DOM">
+        <h1>Document Object Model</h1>
+        <h3>NODE</h3>
+        <p>
+            NODE'as - HTML elementas (JS'o aplinkoje).
+        </p>
+        <p>
+            Daug geresnis būdas kurti HTML elementus per JS yra ne užpildant tėvinio elemento innerHTML'ą kažkokia informacija, bet kuriant informacijos vienetus kaip kintamuosius ir priskiriant juos vienus kitiems.
+        </p>
+        <h3>NODE Metodai</h3>
+        <ul>
+            <li>createElement('tagVardas')</li>
+            <li>kam.append(ką, kąDar, kąąąDaaar...)</li>
+            <li>kam.appendChild(ką)</li>
+            <li>createTextNode('tekstas...')</li>
+            <li>setAttribute('name', 'value')</li>
+            <li>classList
+            <ul>
+                <li>.add('naujaKlase')</li>
+                <li>.remove('esamaKlase')</li>
+                <li>.replace('esamaKlase','naujaKlase')</li>
+                <li>.toggle('kazkokiaKlase') - jeigu nėra - prideda, jeigu yra - išima</li>
+            </ul>
+            </li>
+        </ul>
+        <div id="testZona">
+            
+        </div>
+    </section>
+    <hr>
+    <section id="kartu2">
+        
+    </section>
+    </main>
+</body>
+</html>

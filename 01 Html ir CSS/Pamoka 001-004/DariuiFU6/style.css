@@ -1,0 +1,20 @@
+body {
+    background-color: aquamarine;
+}
+.dramblys {
+    width: 500px;
+}
+.gyvate {
+    width: 200px;
+}
+.vilkas {
+    width: 50px;
+}
+h1 {color: brown}
+
+.vilkas_p {background-color: burlywood}
+.dramblys_p {background-color: cornflowerblue}
+.gyvate_p {background-color: darkmagenta}
+.vilkas_h {color: darkgreen}
+.Dramblys_h {color: darkgray}
+.gyv_h {color: crimson}

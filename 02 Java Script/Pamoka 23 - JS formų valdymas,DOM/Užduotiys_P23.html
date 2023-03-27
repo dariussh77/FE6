@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P23 JS formų valdymas HTML išvedimas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/task1.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/task1.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/task1.js">task1.js</a></h4>
+        <iframe src="./scripts/task1.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <hr>
+        <H2>1.SKAIČIUOKLĖ</H2>
+        <section>
+            <form id="skaiciuokle">
+                <input type="number" step="0.001" name="skaicius1" id="skaicius1">
+                <select name="operatorius" id="operator">
+                    <option value="suma">+</option>
+                    <option value="atimtis">-</option>
+                    <option value="daugyba">*</option>
+                    <option value="dalyba">:</option>
+                    <option value="laisniu">**</option>
+                    <option value="saknis">@</option>
+                    <option value="liekana">%</option>
+                </select>
+                <input type="number" step="0.001" name="skaicius2" id="skaicius2">
+                <input type="submit" value="=">
+                <span id="atsakymas">???</span>
+            </form>
+        </section>
+        <hr>
+        <H2>2.Kino teatro bilietai</H2>
+        <section>
+            <form id="bilietuForma">
+                <label for="inputAmzius">Įveskite savo amžių:</label>
+                <input type="number" name="inputAmzius" id="inputAmzius">
+                <button>Tikrinti</button>
+                <H1 id="isvedimas">Bilieto kaina: <span id="kainosLaukelis">???</span> EU</H1>
+            </form>
+        </section>
+        <hr>
+        <h2>3.Tėvynė šaukia</h2>
+        <section id="armija">
+            <form>
+                <input type="number" placeholder="Įveskite savo amžių" name="inAmzius" id="inAmzius">
+                <br>
+                <label for="inTeistumas">Ar buvote teistas?</label>
+                <input type="checkbox" name="inTeistumas" id="inTeistumas">
+                <input type="submit" value="Tikrinti">
+            </form>
+            <H1>Jūs esate <span id="outAtsakymas">???</span>.</H1>
+        </section>
+        <hr>
+        
+        <h2>4.Bonusai</h2>
+        <section id="bonusai">
+            <form>
+                <input type="number" name="inIsdirbta" id="inIsdirbta" placeholder="Kiek dirbote įmonėje?">
+                <input type="submit" value="Tikrinti">
+            </form>
+            <H1>Jūsų bonusai: <span id="outBonusai">???</span></H1>
+        </section>
+        <hr>
+
+        <h2>5.Keliamieji metai</h2>
+        <section id="keliamieji">
+            <form>
+                <input type="number" name="inKeliamieji" id="inKeliamieji" placeholder="Įveskite metus">
+                <input type="submit" value="Vykdyti">
+            </form>
+            <H1><span id="outMetai">1977</span>-ieji yra <span id="outAts">???</span></H1>
+        </section>
+        <hr>
+
+        <H2>6.Farengeitai</H2>
+        <section id="farengetai">
+            <form>
+                <input type="number" step="0.01" placeholder="??? Celcius" name="inCelius" id="inCelius">
+            </form>
+            <H1><span id="outCelcius">???</span> C = <span id="outFarengeitai">???</span>F</H1>
+        </section>
+        <hr>
+        
+        <h2>7.El.pašto tikrinimas</h2>
+        <section id="elPastas">
+            <form>
+                <input type="email" placeholder="Įveskite el.paštą..." name="inPastas" id="inPastas">
+                <label for="inCheck">Sutinku gauti laiškus</label>
+                <input type="checkbox" name="inCheck" id="inCheck">
+                <input type="submit" value="Pateikti">
+            </form>
+            <H1 id="outPastas"></H1>
+        </section>
+    </main>
+</body>
+</html>

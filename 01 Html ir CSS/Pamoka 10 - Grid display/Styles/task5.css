@@ -1,0 +1,77 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding: 40px;
+    
+}
+main {
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+    width:1000px;
+    height: 1200px;
+    background-color: rgb(232, 227, 227);
+    display: grid;
+    grid: repeat(5,2fr) 1fr repeat(5,2fr)  / repeat(5,2fr)  repeat(5,2fr);
+    gap: 3px;
+}
+main>div:nth-child(1) {
+    background-image: url(../images/moteris1.jfif);
+    background-position: center;
+    background-size: cover;
+    grid-row: 1 /5;
+    grid-column: 2/6;
+  
+}
+main>div:nth-child(2) {
+    background-image: url(../images/moteris2.webp);
+    background-position: center;
+    background-size: cover;
+    grid-row: 1 /5;
+    grid-column: 6/10;
+    
+}
+main>div:nth-child(3) {
+    background-image: url(../images/vyras.webp);
+    background-position: center;
+    background-size: cover;
+    grid-row: 7 /11;
+    grid-column: 2/6;
+    
+}
+main>div:nth-child(4) {
+    background-image: url(../images/andromeda.png);
+    background-position: center;
+    background-size: cover;
+    grid-row: 7 /11;
+    grid-column: 6/10;
+    
+}
+main>div:nth-child(5) {
+    background-color: rgba(255, 255, 255, 0.241);
+    grid-row: 2 /6;
+    grid-column: 1/5;
+}
+main>div:nth-child(6) {
+    grid-row: 2 /6;
+    grid-column: 7/11;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+main>div:nth-child(7) {
+    grid-row:  8/12;
+    grid-column: 1/5;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+main>div:nth-child(8) {
+    grid-row:  8/12;
+    grid-column: 7/11;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+

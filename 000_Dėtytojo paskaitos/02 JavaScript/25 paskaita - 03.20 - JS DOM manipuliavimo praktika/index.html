@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 paskaita - JS DOM manipuliavimo praktika</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="./scripts/dataKartu.js" defer></script>
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="kartu1">
+    <!--     
+      <h1 class="raudonasTekstas didelisTekstas centruotasTekstas">
+        Bandymas su innerHTML
+      </h1>
+      <div class="flex flex-wrap justify-center gap-2">
+        <div class="kortele1">
+          <h3>Kortelės pavadinimas</h3>
+          <img src="https://www.lrt.lt/img/2020/03/06/616185-745992-756x425.jpg" alt="kaziuko mugė">
+          <p>
+            Kortelės aprašymas and so on... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, perspiciatis!
+          </p>
+        </div>
+        <div class="kortele1">
+          <h3>Kortelės pavadinimas</h3>
+          <img src="https://www.lrt.lt/img/2020/03/06/616185-745992-756x425.jpg" alt="kaziuko mugė">
+          <p>
+            Kortelės aprašymas and so on... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, porro.
+          </p>
+        </div>
+        <div class="kortele1">
+          <h3>Kortelės pavadinimas</h3>
+          <img src="https://www.lrt.lt/img/2020/03/06/616185-745992-756x425.jpg" alt="kaziuko mugė">
+          <p>
+            Kortelės aprašymas and so on... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, porro.
+          </p>
+        </div>
+      </div>
+    -->
+    </section>
+    <section id="DOM">
+      <h1>Document Object Model</h1>
+      <h3>NODE</h3>
+      <p>
+        NODE'as - HTML elementas (JS'o aplinkoje).
+      </p>
+      <p>
+        Daug geresnis būdas kurti HTML elementus per JS yra ne užpildant tėvinio elemento innerHTML'ą kažkokia informacija, bet kuriant informacijos vienetus kaip kintamuosius ir priskiriant juos vienus kitiems.
+      </p>
+      <h3>NODE Metodai</h3>
+      <ul>
+        <li>createElement('tagVardas')</li>
+        <li>kam.append(ką, kąDar, kąąąDaaar...)</li>
+        <li>kam.appendChild(ką)</li>
+        <li>createTextNode('tekstas...')</li>
+        <li>setAttribute('name', 'value')</li>
+        <li>classList
+          <ul>
+            <li>.add('naujaKlase')</li>
+            <li>.remove('esamaKlase')</li>
+            <li>.replace('esamaKlase','naujaKlase')</li>
+            <li>.toggle('kazkokiaKlase') - jeigu nėra - prideda, jeigu yra - išima</li>
+          </ul>
+        </li>
+      </ul>
+      <div id="testZona"></div>
+    </section>
+    <section id="kartu2"></section>
+
+
+    <section id="task1"></section>
+    <section id="task2"></section>
+    <section id="task3"></section>
+  </main>
+</body>
+</html>

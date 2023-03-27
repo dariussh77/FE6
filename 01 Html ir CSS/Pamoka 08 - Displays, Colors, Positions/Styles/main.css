@@ -1,0 +1,96 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+
+
+main{
+    margin: 20px;
+}
+.kvadratas {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+    /* background-color: green; */
+    /* background-color: rgba(50, 50, 100, 0.5); */
+   /*  background-color: #0000ffab; */
+    /* background-color: rgba(0, 0, 255, 0.384); */
+    background-image: linear-gradient(
+        to right top,
+        blue 50%,
+        yellow 50% 70%,
+        green
+    );
+}
+.inline {
+    display:inline;
+}
+.block {
+    display: block;
+}
+.Inline-block {
+    display: inline-block;
+
+}
+.static {
+    position: static;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.sticky {
+    position: sticky;
+}
+.top20 {
+    top: 20px;
+}
+.right50 {
+    right: 50px;
+}
+.bottom10 {
+    bottom: 10px;
+
+}
+.left30 {
+    left: 30px;
+}
+.z-index {
+    z-index: 2;
+}
+.tallDiv {
+height: 1000px;
+border: solid;
+}
+header {
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+}
+header > div.pageLinks {
+width: 50%;
+margin: 0 auto;
+line-height: 50px;
+z-index: 100;
+}
+div.pageLinks {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+}
+div.pageLinks:hover {
+    color: green;
+}
+section[id] {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+

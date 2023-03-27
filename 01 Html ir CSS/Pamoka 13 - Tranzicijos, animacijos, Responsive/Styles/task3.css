@@ -1,0 +1,33 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    height: 30px;
+    width:80px;
+    transition-duration: 1s;
+}
+button:visited {
+    color:bisque;
+    background-color: brown;
+    
+    height: 35px;
+    width:85px;
+}
+.anim{
+    margin: auto;
+    width: 80px;
+    height: 150px;
+    border-radius: 50px;
+    display: flex;
+    border: 2px solid black;
+    animation-duration: 3s;
+    animation-name: akis;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+@keyframes akis {
+    0% {
+        transform: scaleY(0.5);
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="grid">
+      <h1>Display Grid</h1>
+      <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-css-grid-properties" target="_blank">GridCheatsheet</a>
+      <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>
+      <h2>Grid properties</h2>
+      <div>
+        <div>
+          <h2>Parent</h2>
+          <ul>
+            <li>grid-template-columns - nurodome stulpelių kiekį ir plotį - 100px 50px 100px</li>
+            <li>grid-template-rows - nurodome eilučių kiekį ir aukštį - 50px 150px</li>
+            <li>grid-template: grid-template-rows /grid-template-columns;</li>
+            <li>grid-template-area - užvadinami tinklelio langeliai sugalvotais pavadinimais</li>
+            <li>column-gap - tarpas tarp grid'o stulpelių</li>
+            <li>row-gap - tarpas tarp grid'o eilučių</li>
+            <li>gap: row-gap column-gap;</li>
+            <li>justify-items</li>
+            <li>align-items</li>
+            <li>place-items: align-items justify-items</li>
+            <li>justify-content</li>
+            <li>align-content</li>
+            <li>place-content: align-content justify-content</li>
+            <li>grid-auto-columns - automatiškai kuria papildomus stulpelius pagal seką pertekliniam elementų kiekiui</li>
+            <li>grid-auto-rows - automatiškai kuria papildomas eilutes pagal seką pertekliniam elementų kiekiui</li>
+            <li>grid-auto-flow: row | column | row dense | column dense;</li>
+            <li>grid: grid-template-rows /grid-template-columns / grid-template-areas | grid-auto-columns / grid-auto-rows / grid-auto-flow;</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Children</h2>
+          <ul>
+            <li>grid-column-start - nurodo kurioje stulpelio linijoje prasidės elementas</li>
+            <li>grid-column-end - nurodo kurioje stulpelio linijoje pasibaigs elementas</li>
+            <li>grid-row-start - nurodo kurioje eilutės linijoje prasidės elementas</li>
+            <li>grid-row-end - nurodo kurioje eilutės linijoje pasibaigs elementas</li>
+            <li>grid-column: grid-column-start / grid-column-end;</li>
+            <li>grid-row: grid-row-start / grid-row-end;</li>
+            <li>grid-area: name | grid-row-start / grid-column-start / grid-row-end / grid-column-end;</li>
+            <li>align-self</li>
+            <li>justify-self</li>
+            <li>place-self</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Special Units & Functions</h2>
+          <ul>
+            <li>1fr - nurodo kokią dalį turinio užims (atėmus: tarpus, px, margin, padding, %, ...)</li>
+            <li>repeat(kiek, ką);</li>
+            <li>minmax(nuo, iki);</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="gridPvz">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I ir II svaitės kartojimas </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#m">MEDIA</a>
+            <a href="#p">PARAGRAPH</a>
+            <a href="#t">TABLE</a>
+            <a href="#f">FORMS</a>
+        </nav>
+    </header>
+    <main>
+        <section id="m">
+            <H1>MEDIA</H1>
+            <div>
+                <video src="./videos/Debut 2021-05-12 15_14_58.mp4" controls></video>
+                <hr>
+                <video controls>
+                    <source src="https://www.youtube.com/embed/sTeoEFzVNSc">
+                </video>
+                <hr>
+                <video src="https://youtu.be/sTeoEFzVNSc" controls>333</video>
+                <hr>
+                <iframe src="https://www.youtube.com/embed/Ploy7S8rqdg" frameborder="0" width="500px" height="400px" allow="autoplay;" allowfullscreen>Iframe</iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RXtRAFTLX_I?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5288.748318426259!2d35.031551852115186!3d48.48771688391985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slt!2slt!4v1677414192367!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>    
+        <hr>
+        <section id="p">
+            <h1>PARAGRAPH</h1>
+            <div>
+                <div>
+                    <p>
+                        Lorem ipsum <span class="isskyrimas">dolor</span> sit amet <em>consectetur</em>, adipisicing elit <sup>233</sup>. Ut  nihil explicabo ipsam animi vitae iusto facere vero repellat quod, facilis beatae excepturi error.  <span class="isskyrimas">Dignissimos</span> A<sub>211</sub> laboriosam ex fugiat necessitatibus quaerat <s>distinctio</s>?  <ins>PPPPP</ins>.  <small>AAAA</small>. <Del>DDDD</Del>. <strong>Strong</strong>
+                    </p>
+                </div>
+                <hr>
+                <div class="bt">
+                    <button class="botton"><a href="https://github.com/BanRokas/" target="_blank"  class="botton"><del>SPAUSK</del></a></button>
+                </div>
+            
+            </div>
+        </section>
+        <section id="t">
+            <h1>TABLE</h1>
+            <div>
+                <table class="tb">
+                    <caption>Lentelė</caption>
+                    <colgroup>
+                        <col style="background-color: blueviolet;">
+                        <col style="background-color: rgb(43, 226, 165);">
+                        <col span="2" style="background-color: rgb(168, 26, 80);">
+                        <col style="background-color: rgb(64, 26, 168);">
+                        
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Nr.</th>
+                            <th>Vardas</th>
+                            <th>Išsilavinimas</th>
+                            <th>Miestas</th>
+                            <th>Valstybė</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tomas</td>
+                            <td rowspan="3">Aukštasis</td>
+                            <td>Vilnius</td>
+                            <td rowspan="4">Lietuva</td>
+                        </tr>                                              
+                        <tr>
+                            <td>2</td>
+                            <td>Andrius</td>
+                            
+                            <td>Kaunas</td>
+                            
+                        </tr>                                              
+                        <tr>
+                            <td>3</td>
+                            <td>Ana</td>
+                           
+                            <td>Šiauliai</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Lina</td>
+                            <td>Vidurinis</td>
+                            <td>Mažeikiai</td>
+                            
+                        </tr>       
+                        <tr>
+                            <td>5</td>
+                            <td>Petras</td>
+                            <td>Pradinis</td>
+                            <td>Londonas</td>
+                            <td>Didžioji Britanija</td>
+                        </tr>                                                   
+                    </tbody>
+                    <tfoot>
+                        <th colspan="5">Kapiec!</th>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section id="f">
+            <H1>FORMOS</H1>
+            <div>
+                <label for="pass">Slaptažodis</label>
+                <input type="password" id="pass">
+            </div>
+            <br>
+            <div>
+                <label for="">Daug teksto</label>
+                <textarea name="" id="" cols="10" rows="1" placeholder=".....rašyk"></textarea>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

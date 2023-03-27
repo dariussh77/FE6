@@ -1,0 +1,43 @@
+.raudonasTekstas{
+  color: red;
+}
+.didelisTekstas{
+  font-size: 4rem;
+}
+.centruotasTekstas{
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.justify-center{
+  justify-content: center;
+}
+.gap-1{
+  gap: 5px;
+}
+.gap-2{
+  gap: 10px;
+}
+
+.kortele1{
+  padding: 10px;
+  border: 1px solid black;
+  background-color: beige;
+  width: 350px;
+}
+.kortele1 > h3{
+  text-align: center;
+  color: blue;
+}
+.kortele1 > img{
+  width: 300px;
+  height: auto;
+}
+.kortele1 > p{
+  text-align: justify;
+}

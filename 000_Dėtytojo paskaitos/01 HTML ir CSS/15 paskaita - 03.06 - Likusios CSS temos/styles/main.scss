@@ -1,0 +1,19 @@
+@use './_variables' as v;
+
+#preprocessors{
+  width: 800px; 
+  height: 500px; 
+  border: 3px dashed black;
+  > h1{
+    font-size: 5rem;
+    background-color: v.$melsva-spalva;
+  }
+  > p{
+    color: red;
+    > span{
+      font-weight: bold;
+      font-size: larger;
+      color: v.$melsva-spalva;
+    }
+  }
+}

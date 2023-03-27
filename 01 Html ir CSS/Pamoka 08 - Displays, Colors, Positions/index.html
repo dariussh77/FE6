@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoka8</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <header>
+        <!-- <div>logo</div>
+        <div>menu links</div>
+        <div>user info</div> -->
+        <div class="pageLinks">
+            <a href="#displays">Displays</a>
+            <a href="#colors">Color</a>
+            <a href="#positions">Positions</a>
+            <a href="">Užduotys</a>
+        </div>
+    </header>
+    <main>
+        <section id="displays"> <!-- Displays -->
+            <h1>Displays</h1>
+            <ul>
+                <li>Inline</li>
+                <li>block</li>
+                <li>inline-block</li>
+            </ul>
+            <div>
+                <h3>Inline</h3>
+                <p> - elementai išsidėsto toje pačioje eilutėje, bet negali turėti aukščio ir dydžio. Juos nustato turinys</p>
+                <div class="kvadratas inline">1 inline</div>
+                <div class="kvadratas inline">2 inline</div>
+                <div class="kvadratas inline">3 inline</div>
+                <div class="kvadratas inline">4 inline</div>
+            </div>
+            <div>
+                <h3>Block</h3>
+                <p>- elementai išsidėsto atskiruose eilutėje ir užima visą eilutę,  gali turėti aukščio ir dydžio nustatymus, turinys keičia dydį jei nenustatyti aukčio ir ilgio nustatymo.</p>
+                <div class="kvadratas block">1 block</div>
+                <div class="kvadratas block">2 block</div>
+                <div class="kvadratas block">3 block</div>
+                <div class="kvadratas block">4 block</div>
+            </div>
+            <div>
+                <h3>Inline-block</h3>
+                <p>- elementai išsidėsto vienas šalia kito ir neužima visos eilutės,  gali turėti aukščio ir dydžio nustatymus, turinys nekeičia dydį jei nenustatyti aukčio ir ilgio nustatymo.</p>
+                <div class="kvadratas Inline-block">1 Inline-block</div>
+                <div class="kvadratas Inline-block">2 Inline-block</div>
+                <div class="kvadratas Inline-block">3 Inline-block</div>
+                <div class="kvadratas Inline-block">4 Inline-block</div>
+            </div>
+        </section>
+        <section id="colors"><!-- Colors -->
+            <h1>Color</h1>
+            <ul>
+                <li>color name - ~140 spalvų</li>
+                <li>rgb - red green blue - 256^3 spalvų</li>
+                <li>hex (#) - hexidecimal(šešioliktainis) - 00-ff - 256^3</li>
+                <li>hsl</li>
+                <li>hwb</li>
+            </ul>
+            <div>
+                <h3>color names</h3>
+                <p>
+                    Uždadintų spalvų yra apie 140. rašyti jos pavadinimą. 
+                </p>
+            </div>
+            <div>
+                <h3>RGB(a) (Red Grean Blue Alpha)</h3>
+                <p>
+                    Naudojant Rgb kodą, kiekviena spalva susideda iš 3pagrindinių spalvų mišinio. Vienos spalvos kiekis nurodymaas kiekvienos spalvo kiekiu nuo 0-255. Melyna rgb(0,0,255)
+                </p>
+                <p>
+                rgbA - kaip rgb su permatomumu Alpha. Nuo 0 - 1 , žingsnis 0,001/ Pvz Melyna rgb( 0, 0, 255, 0.5)
+                </p>
+            </div>
+            <div>
+                <h3>Hex kodas#</h3>
+                <p>
+                    Naudojant hex kodą nurdoma spalva - #00-#FF. Melyna - Pvz #00 00 FF
+                </p>
+                <p>
+                    Permatomomą pridedame šioliktainį skaičių.Pvz #00 00 FF FF pilnai nepermatoma
+                </p>
+                <p>
+                    Hex kodą galima trumpintii, jei yra du vienodi simboliai iš eilės (dvigubai sumažinant)
+                </p>
+            </div>
+            <div>
+                <h2>Gradient</h2>
+                <ul>
+                    <li>Linear</li>
+                    <li>Radial</li>
+                    <li>conic</li>
+                    <li>Repeating</li> 
+                </ul>
+                <p>               
+                    Naudojant spalvų perėjimus, reikia pasirinkti spalvų stilių ir jo nustatymuosenurodyti, kad naudojamas kažkuris gradientas. PVz: backgroup-image: inear-gradient                        
+                </p>
+                <p>
+                    Nustatymai susidea iš minimu 3 dalių- kur prasideda gradiento piešimas/ į kurią pusępiešimas vyksta; spalva1; slava1
+                </p>
+                <p>
+                    Nurodant splavas galima nurodyti %, kiek procentų užims
+                </p>
+            </div>
+        </section>
+        <section id="positions"> <!-- Positions -->
+            <H1>Positions</H1>
+            <ul>
+                <li>static</li>
+                <li>relatve</li>
+                <li>absolute</li>
+                <li>fixed</li>
+                <li>sticky</li>                
+            </ul>
+            <p>
+                Nustačius bet kurią apart static poziciją, elementui galime suteikt: top, right, bottom, left ir z-index stilius.
+            </p>
+            <div>
+                <h2>Static</h2>
+                <p>
+                    Static- defoltine pozicija visų elementų, top, right... nieko nedaro.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static top20">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+
+            <div>
+                <h2>Relative</h2>
+                <p>
+                    Relative pozicija suteikia top, left.... stiliais. Relatyviosios pozicijos top... nustatymai pastumia per atstumą nuo nurodytos kraštinės nuo pradinės pozicijos. Elementas turintis Relative pozicija yra jo viduje viduje esančio elemento su abs poziciją riba.????
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static top20">Static</div>
+                    <div class="kvadratas Inline-block relative">Relative</div>
+                    <div class="kvadratas Inline-block relative right50 z-index" >Relative</div>
+                </div>
+                
+            </div>
+            <div class="relative">
+                <h2>Absolute</h2>
+                <p>
+                    Elemetas sus Absoliučiaja posicija išeina ir elemtu eilės. Suteikia galimybe naudoti top.... Absoliučios pozicijos top... nustatatymai pastumia elementa nuo jo protėvio elemento kraštų, jei šis turi relatyviąja poziciją.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block absolute left30 bottom10">Absolute</div>
+                    <div class="kvadratas Inline-block static">Relative</div>
+                    <div class="kvadratas Inline-block static" >Static</div>
+                </div>
+                
+            </div>
+            <div>
+                <h2>Fixed</h2>
+                <p>
+                    Fixouja elememta kai kurioj vietoj. Išeina iš puslapio tėkmės. Fixsuojasi nurodytoje pozicijoje ir scrolinant lieka ekrano vietoje.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block fixed right50 bottom10">Fixed</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+            <div>
+                <h2>Sticky</h2>
+                <p>
+                    Static- defoltine pozicija visų elementų, top, right... nieko nedaro. Iš puslapio tėkmės neišeina. Nustatymai top... nurodo atstumą prilipti prie ekrano kraštinės. Jis juda tik elemeto viduje.
+                </p>
+                <div class="tallDiv">
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block sticky top20">Sticky</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+            <div>
+                <h2>Stgggggggggggggggatic</h2>
+                <p>
+                    Static- defoltine pozicija visų elementų, top, right... nieko nedaro.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static top20">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+            <div>
+                <h2>Statttttttttttttttttttttttttttic</h2>
+                <p>
+                    Static- defoltine pozicija visų elementų, top, right... nieko nedaro.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static top20">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+            <div>
+                <h2>Statttttttttttttttttttic</h2>
+                <p>
+                    Static- defoltine pozicija visų elementų, top, right... nieko nedaro.
+                </p>
+                <div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static top20">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                    <div class="kvadratas Inline-block static">Static</div>
+                </div>                
+            </div>
+            <br>
+            <br>
+            <br>
+        </section>
+        <section><!-- Selectors -->
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+body {
+    margin: 20px;
+}
+
+td, th {
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+
+} 
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: solid;
+    border-color: black;
+ }
+ tr > td:first-child {
+color: brown;
+ }
+
+ div p {
+    color: chocolate;
+ }
+div>p {
+    color: chartreuse;
+}
+div.class1.class2#id1 {
+    color: aqua;
+}
+.class1>* {
+    background-color: blue;
+}
+.s_table {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-color: grey;
+}
+.s_table thead {
+    text-transform:uppercase;
+    font-size: 12px;
+}
+#head_c1 {
+    background-color: white;
+    color: black;
+}
+#head_c2 {
+    background-color: rgb(204, 142, 71);
+    color: white;
+}
+#head_c3 {
+    background-color: red;
+    color: white;
+}
+#head_c4 {
+    background-color:blue;
+    color: white;
+}
+.s_table td:first-child {
+    color: white;
+    text-align: left;
+}
+.s_table th, td {
+    border: grey;
+}

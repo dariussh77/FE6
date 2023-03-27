@@ -1,0 +1,26 @@
+.blokas-1 {
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border: 4px dotted blue;
+    box-sizing: border-box;
+    background: green;
+    display: inline-block;
+}
+.blokas-2 {
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    border: 4px dotted blue;
+    box-sizing: border-box;
+    background: darkmagenta;
+    display: inline-block;
+}
+.blokas-3 {
+    height: 250px;
+    width: 200px;
+    border: 5px dotted blue;
+    box-sizing: border-box;
+    background: aqua;
+    display: inline-block;
+}

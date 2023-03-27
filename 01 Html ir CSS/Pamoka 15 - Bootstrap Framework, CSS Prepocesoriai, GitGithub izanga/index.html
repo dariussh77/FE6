@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P15 Bootstrap Framework, CSS Prepocesoriai, GitGithub zanga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+</head>
+<body>
+    <section id="gitGithub">
+        <H1>Git ir Github</H1>
+        <p>Git - kodo versijavimo sistema. <a href="https://git-scm.com/downloads" target="_blank">Git downloads</a></p>
+        <p>GitHub- svetainė kur keliamos kodas <a href="https://github.com/" target="_blank">Github</a></p>
+        <ol>
+            <li>Įsirašyti Gitą į PC</li>
+            <li>Patikrinti Git įrašytas: terminale - git --version</li>
+            <li>susikuriti Github paskyrą</li>
+            <li>Konfigūruoti git'ą:
+                <ul>
+                    <li>git config --global user.name githubVartojoVardas </li>  
+                    <li>git config --global user.email githubVartojoEmail </li>  
+                    <li>git config --global core.editor code </li>
+                    <li>git config --global core.autocrlf true (Windows) arba input (Linux, mac)</li>
+                </ul>
+            </li>
+            <li>patikrinti ar teisingas config failas - git config --global --edit</li>
+        </ol>
+    </section>
+    <section id="accessibility">
+        <H1>Puslapio prieinamumas</H1>
+        <p>Puslapio pritaikymas su negalia: Klausa, aklumas, prastas regėjimas. Pvz; šrifto dydis, alt- atributai puslapio įgarsinimui, spavų režimai</p>. 
+        <p>
+            Visi standartai yra aprašyti <a href="https://www.w3.org/WAI/" target="_blank">čia</a>.
+          </p>
+          <p>
+            Automatinių skaitytuvų <a href="https://webaim.org/projects/screenreadersurvey8" target="_blank">apklausa</a>.<br>
+            Kas yra automatinis skaitytuvas <a href="https://youtu.be/dEbl5jvLKGQ" target="_blank">video</a>.
+          </p>
+          <p>
+            Alternatyvūs tekstai paveiksliukams ir video <a href="https://axesslab.com/alt-texts/" target="_blank">info</a>.
+          </p>
+          <p>
+            ARIA atributai ir jų nauda <a href="https://www.w3.org/TR/wai-aria/#document_structure_roles" target="_blank">info</a>.
+          </p>
+          <p>
+            Prisitaikymas prie vartotojo įrenginio <a href="https://www.lambdatest.com/blog/css-media-queries-for-responsive-design/" target="_blank">info</a>.
+          </p>
+          <p>
+            Meta tag'ai nusako svetainės informaciją <a href="https://ahrefs.com/blog/seo-meta-tags/" target="_blank">info</a>.
+          </p>
+    </section>
+    <section id="preprocessors">
+        <h1>sass/scss</h1>
+        <P>sUTEIKIA galimybę naujoviškai rašyti CSS codą - kurti, konvertuoti, nestinti, rašyuti ( <span>SPANAS</span> )</P>
+        <p>Live Sass compiler extention - VSCode programoje - vienas iš preprocesorių <a href="https://sass-lang.com/" target="_blank">SASS web</a></p>
+    </section>
+    <section id="Variables">
+        <h1>Variables</h1>
+        <p>Kuriami kintamieji užsivadinti savybes <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank">MDN variables web</a> -   :root {--pavadinimas: green}</p>
+    </section>
+    <section id="css_frameworks">
+        <H1>Css frameworks</H1>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Tailwind</li>
+          <li>Bulma</li>
+          <li>UI Kit</li>
+          <li>Materialize</li>
+          <li>Milligram</li>
+          <li>Foundation</li>
+          <li>.....</li>
+        </ul>
+        <div>
+          <div>
+            <H2>Pros</H2>
+            <ul>
+              <li>nereikia rašyti CSS</li>
+              <li>Pagreitina darbą</li>
+              <li>lengva naudotis</li>
+              <li>Responsiveness</li>
+            </ul>
+          </div>
+          <div>
+            <H2>Cons</H2>
+            <ul>
+              <li>Daug pertekslinio kodo</li>
+              <li>Neunikalus dizainas</li>
+              <li>Reikia mokintis naudotisd</li>
+              <li>Prastesnis google paieškos sistemos įvertinimas</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          Css Frameworks - kažkieno parašytas kodas. Norint naudotis frameworku reikia jį prijunti prie savo mžkodo naudojant CDN.
+          <br>
+          Yra <a href="https://github.com/dbohdan/classless-css" target="_blank">Classless</a> CSS frameworkų
+        </p>
+        <div class="container border">
+          <div class="row">
+            <div class="border col-md-12 col-lg-4">1</div>
+            <div class="border col-md-12 col-lg-4">2</div>
+            <div class="border col-md-12 col-lg-4">3</div>
+          </div>
+          <div class="row">
+            <div class="border col-md-12 col-lg-6">4</div>
+            <div class="border col-md-12 col-lg-6">5</div>
+          </div>
+        </div>
+    </section>
+    
+</body>
+</html>

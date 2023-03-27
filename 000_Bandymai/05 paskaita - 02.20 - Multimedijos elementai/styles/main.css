@@ -1,0 +1,39 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* jusu kodas */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.hide{
+  display: none;
+}
+
+.marginsPaddings{
+  margin: 50px; /* visom kraštinėm po 50*/
+  margin: 50px 20px; /* viršuj apačiai po 50 | dešinei kairei po 20 */
+  margin: 50px 20px 10px; /* viršuj 50 | dešinei kairei po 20 | apačiai 10*/
+  margin: 50px 20px 10px 5px; /* top 50 | right 20 | bottom 10 | left 5*/
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.paveikslelioDydisS{
+  width: 100px;
+  height: auto;
+  color: red;
+}
+.paveikslelioDydisM{
+  width: 200px;
+  height: auto;
+}
+
+.audioTryOut{
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+}

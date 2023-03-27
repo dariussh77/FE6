@@ -1,0 +1,28 @@
+html {
+    background: #bd7676;
+    text-align: center;
+    }
+div {text-align: center}
+header {
+    width: 700px;
+    padding: 20px;
+    border: 3px solid white;
+    color: white;
+    margin: 20px auto;
+    }
+main {
+    margin: 20px auto;
+    padding: 20px;
+    width: 700px;
+    border: 3px solid white;
+    color: white;
+    background-image: url("https://img.freepik.com/free-photo/color-smoke-abstract-wallpaper-aesthetic-background-design_53876-128237.jpg");
+    }
+footer {
+    margin: auto;
+    padding: 20px;
+    width: 750px;
+    border: 3px solid white;
+    color: white;
+    background-image: url("https://img.freepik.com/free-photo/color-smoke-abstract-wallpaper-aesthetic-background-design_53876-128237.jpg");
+    }

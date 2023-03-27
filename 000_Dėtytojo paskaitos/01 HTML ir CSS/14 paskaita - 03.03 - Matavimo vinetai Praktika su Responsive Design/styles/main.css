@@ -1,0 +1,21 @@
+/* :root{
+  font-size: 1px;
+} */
+
+section#units{
+  font-size: 2em; /* 32px */
+}
+
+.px{
+  font-size: 30px;
+}
+.rem{
+  font-size: 2em;
+  height: 10rem; /* 160px */
+  width: 5em; /* 100px */
+  border: 1px solid black;
+}
+.em{
+  font-size: 16px;
+  font-size: 1em;
+}

@@ -1,0 +1,29 @@
+.DIV1 {
+    padding:20px;
+    margin: 20px;
+    text-align: left;
+    font-family: Candara, math;
+    color: darkgreen;
+    letter-spacing: 5px;
+    border-style: groove;
+}
+.DIV2 {
+    padding:50px;
+    margin: 50px;
+    text-align: right;
+    font-family: "Droid Sans", emoji;
+    color: darkmagenta;
+    letter-spacing: 2px;
+    border-style: dashed;
+}
+.DIV3 {
+    padding: 100px;
+    margin: 100px;
+    text-align: center;
+    font-family: "Leelawadee UI", fantasy;
+    color: cornflowerblue;
+    letter-spacing: 1px;
+    border-width: 10px;
+    border-style: inset;
+    border-color: blueviolet;
+  }

@@ -1,0 +1,17 @@
+.Header {
+    background: blanchedalmond;
+    text-align: center;
+    font-size: xx-large;
+    height: 350px;
+    text-shadow: 2px 2px #845027;
+}
+.aside1 {
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    vertical-align: top;
+}
+html {
+    font-family: "Roboto";
+    background: burlywood;
+}

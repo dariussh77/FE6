@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoka7</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <main>
+        <section> <!-- formos -->
+            <div>CTRL+Space - VSC išmeta pasirinkima</div>
+            <div> 
+                <h1>Formų tagai</h1>
+                <ul>
+                    <li>FORM</li>
+                    <li>label - etiketė, naudojama prie įvesties nurodyto įvesties laukelio pavadinimui</li>
+                    <li>input -įvesties laukelis</li>
+                    <li>textarea- ivesti daug teksto</li>
+                    <li> select - ivesties laukas pasirinkti vienam ir pateiktu variantu</li>
+                    <li>option - select pasirinkimo variantai</li>
+                    <li>Optgroup- optionu gupės</li>
+                    <li>Output</li>
+                </ul>
+                
+            </div>
+                
+            <div> <!-- ATributai -->
+                <h1>Formos elemtų atributai</h1> 
+                <ul>
+                    <li>for - label atributas- nurodo kuriam ivesries laukui priskitas label</li>
+                    <li>id - *atributas -prijungti label su input; input lauko atpažinimui</li>
+                    <li>name - inputo atpažinimui</li>
+                    <li>placeholder - betkuriam inputui - atvaizduoti pavyzdini ivesti</li>
+                    <li>rows/cols- textarea atributas- nurodyti dydį {geriau CSS}</li>
+                    <li>label -optgroup atributas- skirtas optgupes pavadinimui</li>
+                    <li>value - option atributas- nusako optiono reiksme</li>
+                    <li>selected - optiono atributas- nurodo automatiskai parinkta optiona</li>
+                    <li>check- nurorodo</li>
+                    <li>type - </li>
+                        <ul>
+                            <li>button - mygtukas nenaudojimas</li>
+                            <li>color - spalvos pasirinkimo dezute</li>
+                            <li>date - datos pasirinkimas</li>
+                            <li>Date time-local</li>
+                            <li>email</li>
+                            <li>file</li>
+                            <li>hidden</li>
+                            <li>image - paveiksliukas paspaudus forma</li>
+                            <li>month</li>
+                            <li>number</li>
+                            <li>password</li>
+                            <li>range - slankiklis</li>
+                            <li>reset - išvalo forma</li>
+                            <li>search</li>
+                            <li>Submit -formos pateikiui</li>
+                            <li>tel - telefonas</li>
+                            <li>text</li>
+                            <li>time</li>
+                            <li>url</li>
+                            <li>week</li>
+
+                            <li>radio - pasirinkimas skrituliukais tik viena</li>
+                            <li>checkbox - pasirinkimas pauksciuku daug galima</li>
+                        </ul>
+                </ul>
+            </div>
+
+            <div><!-- formos pavyzdys -->
+                    <h1>Pavyzdinė forma</h1>
+                    <form class="forma" onsubmit="">
+                        <div>
+                            <label for="vardas">Vardas</label>
+                            <input type="text" id="vardas" name="vardas" placeholder="Jūsų Vardas">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Pavardė</label>
+                            <input type="button">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Spalva</label>
+                            <input type="color" value="#662323">
+                        </div>
+                        <br>                        
+                        <br>
+                        <div>
+                            <label for="">Data</label>
+                            <input type="date">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Laikas local</label>
+                            <input type="datetime-local">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Email</label>
+                            <input type="email" required>
+                            <button>Submit</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">File</label>
+                            <input type="file">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Gidden</label>
+                            <input type="hidden">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Image</label>
+                            <input type="image">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Skaicius</label>
+                            <input type="number">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Password</label>
+                            <input type="password">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Range</label>
+                            <input type="range">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Reset</label>
+                            <input type="reset">                     
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Search</label>
+                            <input type="search">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Sumit</label>
+                            <input type="submit">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Telefonas</label>
+                            <input type="tel" value="+370 00 000">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Time</label>
+                            <input type="time">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Week</label>
+                            <input type="week">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">URL</label>
+                            <input type="url">
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="">Daug teksto</label>
+                            <textarea name="" id="" cols="10" rows="10" required maxlength="20" disabled></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="rinktis">Pasirinkite</label>
+                            <select name="Pasirinkimas" id="rinktis">                                
+                                <optgroup label="Pradžia">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </optgroup>
+                                <optgroup label="Pabaiga">
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                </optgroup>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">fff</label>
+                            <input type="radio">
+                            <label for="">ghh</label>
+                            <input type="radio">
+                            <label for="">ghghgh</label>
+                            <input type="radio">
+                        </div>
+                        <br>                       
+                        <div>
+                            <label for="">fff</label>
+                            <input type="checkbox">
+                            <label for="">ghh</label>
+                            <input type="checkbox">
+                            <label for="">ghghgh</label>
+                            <input type="checkbox">
+                        </div>
+                        <br>
+                    </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

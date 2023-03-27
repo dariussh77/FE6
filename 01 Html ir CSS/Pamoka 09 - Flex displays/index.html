@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid ir Flex</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>      
+            <ul>
+                <li><a href="#flex">Flex</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#bgImages">Background Images</a></li>
+                <li><a href="#selectors">Selectors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="flex"> <!-- Flex -->
+            <h1>Display Flex</h1>
+            <div>
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties" target="_blank">Flex cheatsheet</a>
+                <a href="https://flexboxfroggy.com/" target="_blank">Fex Froggy žaidimas</a>
+                <a href="http://www.flexboxdefense.com/" target="_blank">Flex Defence žaidimas</a>
+            </div>
+            <h2>Flex Properties</h2>
+            <div>
+                <H4>Parent element - container</H4>
+                <ul>
+                    <li>Flex-direction: row / column/row-reverce/ column-reverse</li>
+                    <li>fle-wrap: nowrap (default), wrap, wrap-reverce </li>
+                    <li>Flex-flow: apjungią flex-direction ir flex-wrap</li>
+                    <li>justify-content: (pagrindiniai) flex-start(default), flex-end, center, space-between, space-around, space-evenly</li>
+                    <li>align-items (atskirų eilučių nustatymas): strech (default) flex-start, flex-end, center, baseline</li>
+                    <li>aligh-content (Viso turinio nustatymui)(no default): strech, flex-start, flex-end, center, space-between, space-around, space evenly (Prioritetas jei maudojamas jei align-items)</li>
+                    <li>gap - row-gap column-gap</li>
+                </ul>
+            </div>
+            <div>
+                <H4>Children element - flex item</H4>
+                <ul>
+                    <li>Order:number; default (0)</li>
+                    <li>align-self (Veikia kaip Aligh-items, bet tik vienam elementui): flex-star, flex-end, auto, center, strech, baseline</li>
+                    <li>flex-grow:1 default, padidinti procentaliai</li>
+                    <li>flex-shrink: </li>
+                    <li>flex-basis: 1px, default auto, nurodo kaip bus paskirstyta nepanaudota vieta</li>
+                    <li>flex (apjungimas auksčiau esančių): grow shrink basis</li>
+
+                </ul>
+            </div>
+            <div class="flexTest"> <!-- Flex testavimas -->
+                <!-- div.kvadratas{Bandymas $}*12  - sukuria 12 divu  -->
+                <div class="kvadratas order2 itemFlex1">Laukelis 1</div>
+                <div class="kvadratas itemFlex1">Laukelis 2</div>
+                <div class="kvadratas itemFlex1">Laukelis 3</div>
+                <div class="kvadratas itemFlex2">Laukelis 4</div>
+                <div class="kvadratas order1">Laukelis 5</div>
+                <div class="kvadratas alighSelf">Laukelis 6</div>
+                <div class="kvadratas">Laukelis 7</div>
+                <div class="kvadratas">Laukelis 8</div>
+                <div class="kvadratas">Laukelis 9</div>
+                <div class="kvadratas">Laukelis 10</div>
+                <div class="kvadratas">Laukelis 11</div>
+                <div class="kvadratas">Laukelis 12</div>
+            </div>
+            <br>
+            
+            
+        </section>
+        <section id="grid"> <!-- Grid -->
+            :)
+        </section>
+        <section id="bgImages"> <!-- background images -->
+            <div>
+                <h1>Background images</h1>
+                <div class="fonas1">
+                    <H3>Background-image</H3>
+                    <ul>
+                        <li>background-image: url("")</li>
+                        <li>background-size: cover, contain,...</li>
+                        <li>backround-repeat:repeat, none</li>
+                        <li>background-attachment:fixed, local, scroll</li>
+                        <li>background-clip: su -web-background-clip</li>
+                    </ul>
+                </div>
+                <div class="fonas2">
+                    <h3>img ir positions</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZCUSC9HcF6YDx0gkEVof54yvJONL2ZP6ni3GqpFYl&s" alt="bgImage">
+                    <div class="z_index">
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est eius ratione neque deleniti inventore ducimus blanditiis eos dolorum architecto. Quos repellendus accusamus quaerat nesciunt repellat, ipsam officiis molestiae nisi. 
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section id="selectors"> <!-- Selectors -->
+
+        </section>
+    </main>
+</body>
+</html>

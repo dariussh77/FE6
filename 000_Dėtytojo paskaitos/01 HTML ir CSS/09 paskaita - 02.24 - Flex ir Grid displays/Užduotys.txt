@@ -1,0 +1,3 @@
+1) Įveikti flexFroggy ir flexDefense žaidimus.
+2) Naudojant flex atkurti ./images/Flex1.PNG paveikslėlio vaizdą.
+3) Naujame html faile (pvz.: task3.html) atkartoti ./images/FlexPage1.PNG esantį puslapį naudojant flex.

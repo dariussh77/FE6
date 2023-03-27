@@ -1,0 +1,13 @@
+#uzd {
+    color: blue;
+}
+.bold {
+    font-weight: bold;
+}
+.Italic {
+    font-style: italic;
+}
+html {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,30 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: rgb(34, 23, 73);
+}
+table {
+    border-collapse: collapse;
+    color:rgba(255, 255, 255, 0.541);
+}
+th {
+    text-align: left;
+}
+td {
+    border: 5px solid transparent;
+}
+tr:nth-child(2n+1) {
+    background-color: rgba(255, 255, 255, 0.096);
+}
+tr:nth-child(2n+2) {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+thead>tr>th {
+    background-color: transparent;
+}
+.p {
+    background-color: aqua;
+    border-radius: 3px;
+}

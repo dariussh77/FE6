@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P12- Ikonos, Selektoriai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+</head>
+<body>
+    <main>
+        <section id="ikonos">
+            <h1>IKONOS</h1>
+            <a href="https://www.w3schools.com/icons/icons_reference.asp" target="_blank">W3 ikons</a> <br>
+            <p>
+               
+                Ikonos savo tago neturi, jos naudoja kitus tagus ir priskirdamos jiems klases, būna atvaizduojamos.Dažniausios i (italic) arba span. <br>
+                Norint naudoti <i class="bi bi-watch"></i> ikonas, reikia prijungti vieną iš dauglio ikonų bibliotekų prie savo sveiatinės. Galimos biliotekos: <i> Font-awesom, bootstrap ( <a href="https://icons.getbootstrap.com/" target="_blank">bootstrap</a> ), google, MUI, Ant-Design, Tailwind, Bulma..</i>
+                
+            </p>
+            <p>
+                Norint stilizuotiikonas jas stilizuojame kaip textinius elemetus: spalva; fonas.
+            </p>
+
+        </section>
+        <section id="selektoriai">
+            <h1>Selektoriai</h1>
+            <a href="https://www.w3schools.com/cssref/css_selectors.php" target="_blank" >Selektoriai2</a>
+            <a href="https://flukeout.github.io/" target="_blank">Žaidimas</a>
+            <ul>
+                <li>Basic selektoriai
+                    <ul>
+                        <li>Element - elemeto sel: p {</li>
+                        <li>class - .classname {</li>
+                        <li>id - #id_name {</li>
+                        <li>multiple- div, .classname {</li>
+                        <li>- parenka elementus elemento viduje bet kuriam gylyje- div p {</li>
+                        <li>- parenka elementus elemento viduje tik vienu lygiu zemyn - div > p {</li>
+                        <li>elemntas su klase arba klasemis - div.class1.class2#id1 {</li>
+                        <li>viskas- bet koks elementas - * {</li>
+                        <li>next element - input+label {}</li>
+                        <li>elementai esantys uz elementos- input~label {}</li>
+                    </ul>
+                </li>
+                <li>Atributai:
+                    <ul>
+                        <li>[attribute] -renkasi elementą turintis atributą [classs]</li>
+                        <li>[attribute="reikšmė"] -renkasi elementą turintis atributą su reikšme[classs="ggg"]</li>
+                        <li>[attribute~="reikšmė"] -renkasi elementą turintis atributą kur viena iš reišmių yra nurodyta[classs~="ggg"]</li>
+                        <li>[attribute="reikšmė" -renkasi elementą turintis atributą kur  yra nurodyta[classs~="ggg"]</li>
+                        <li>[attribute=""] ???????????</li>
+                        <li>[attribute^=""] ???????????</li>
+                        <li>[attribute^=".https://"] - prasideda reiksme</li>
+                        <li>[attribute$=".png"] - pasibaigia</li>
+                        <li>[attribute*="fff"] - simboliu seka viduje</li>
+                    </ul>
+                </li>
+                <li>Pseudo elementai:
+                    <ul>
+                        <li>a::before</li>
+                        <li>li::after</li>
+                        <li>a::first-line</li>
+                        <li>a::first-letter</li>
+                        <li>a::marker - burbuliukas</li>
+                        <li>input::placeholder - </li>
+                        <li>div::selection</li>
+                    </ul>
+                </li> 
+                <li>Pseudo klases- eiliškumo selektoriai:
+                    <ul>
+                        <li>.class:first-of-type</li>
+                        <li>.class:first-child</li>
+                        <div><li>:last-of-type</li></div>  
+                        <li>:last-child</li>
+                        <li>.class:only-of-type</li>
+                        <li>.class:only-child</li>
+                        <li>:nth-of-type ()</li>
+                        <li>:nth-first- child</li>
+                        <li>:nth-last- child</li>
+                        <li>:nth-child()</li>
+                    </ul>
+                </li> 
+                <li>Nuorodos
+                    <ul>
+                        <li>:link- nelankyta nuoroda</li>
+                        <li>:visited - lankyta nuoroda</li>
+                        <li>: active - paspaudimo metu nuoroda</li>
+                        <li>:hover - užėjus pele</li>
+                    </ul>
+                </li>
+                <li>Formų selektoriai
+                    <ul>
+                        <li>:check - pažymėtas radio</li>
+                        <li>:default - įprastas input pavidalas</li>
+                        <li>:disabled - input neaktyvus</li>
+                        <li>:enabled - be disable atributo</li>
+                        <li>:focus - inputas aktyvus fokusuotas </li>
+                        <li>:in-range</li>
+                        <li>:out-of-range</li>
+                        <li>:valid</li>
+                        <li>:invalid</li>
+                        <li>:indetermind</li>
+                        <li>requere</li>
+                        <li>read-only</li>
+                        <li>read-write</li>
+                       
+                    </ul>
+                </li>
+                <li>Likę selektoriai
+                    <ul>
+                        <li>:fullscreen</li>
+                        <li>:hover</li>
+                        <li>:lang</li>
+                        <li>:not(.class) - apart</li>
+                        <li>:root!!!!!!</li>
+                        <li>:target</li>
+                        <li>:empty</li> 
+                    </ul>
+                </li>
+            </ul>
+        </li>
+            </ul>
+            
+        </section>
+        <input type="text" placeholder="Rasyk">
+        <div>
+            <H1>H2</H1>
+            <p>1</p>
+            <h2>H22</h2>
+            <p>2</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <h3>10</h3>
+            <h3>11</h3>
+            <h3>12</h3>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@import url(normalize);
+@import url(bootstrap);
+
+
+@import url(../../styles/header.css);
+@import url(../../styles/footer.css);

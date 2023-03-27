@@ -1,0 +1,3 @@
+0) Jeigu dar silpnai jaučiatės su responsive design, galite atkartoti ./images/simpleResponsiveLayout.PNG esantį išdėstymą naudojant MobileFirst dizaino principą.
+1) Atkartoti 1 iš 3 ./images/responsiveDesign_.jpg puslapių naudojant MobileFirst dizaino principą.
+2 extra) Atkartoti ./images/blockChainMobile|Desktop.png puslapio dizainą naudojant MobileFirst dizaino principą. (galima sugalvoti ir pridėti kokį nors tablet variantą)

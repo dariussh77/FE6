@@ -1,0 +1,69 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+main {
+    margin: 20px 20px 2000px 20px;
+    
+}
+/* meniu */
+header {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header>nav {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;   
+}
+section[id] {
+    scroll-margin-top: 50px;
+}
+
+/* meniu */
+
+.isskyrimas {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: brown;
+    text-decoration-thickness: 3px;
+
+}
+a {
+    text-decoration: none;
+}
+.botton {
+    transition: all 2s;
+    
+}
+.botton:hover {
+transform: rotate3d(0, 0, 3, 360deg) translateY(150px);
+}
+.bt {
+    display: flex;
+    justify-content: center;
+}
+td,th {
+    border: 3px solid red;
+}
+table {
+    border-collapse: collapse;
+}
+td:first-child {
+    text-align: center;
+}
+td:nth-child(2) {
+    color: blue;
+}
+
+
+

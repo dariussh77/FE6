@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tranzicijos, Animacijos ir Responsive puslapis Mobile First principu</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <div>img</div>
+    <nav>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="tranzicija">
+      <h1>Transition</h1>
+      <p>Tranzicija - elemento būsenos kitimas.</p>
+      <h3>Tranzicijos nustatymai</h3>
+      <ul>
+        <li>transition-property - nurodai koks stilius keičiasi pagal kitus tranzicijos nustatymus</li>
+        <li>transition-duration - per kiek laiko vykdoma tranzicija</li>
+        <li>transition-timing-function - nurodai laiko ir kitimo funkciją (ease, ease-in, ease-out, ease-in-out, linear...)</li>
+        <li>transition-delay - po kiek laiko pradės vykdyti tranziciją</li>
+        <li>transition - nurodai visus tranzicijos stilius (svarbu duration nurodyti ankščiau negu delay)</li>
+      </ul>
+      <p>Tranzicijos veiksmas/ai nurodomi CSS'e naudojant :hover, :focus, :active... efektą.</p>
+      <div class="tranzitionPvz">
+        <div>Pirmasis yay</div>
+        <button>Press Me</button>
+      </div>
+    </section>
+    <section id="animacija">
+      <h1>Animation</h1>
+      <p>
+        Elemento kitimas per keletą žingsnių.
+      </p>
+      <h3>Animacijos nustatymai</h3>
+      <ul>
+        <li>animation-duration - kiek laiko užtruks animacija</li>
+        <li>animation-timing-function - nurodai laiko ir kitimo funkciją (ease, ease-in, ease-out, ease-in-out, linear...)</li>
+        <li>animation-delay - po kiek laiko prasidės animacija</li>
+        <li>animation-iteration-count - kiek sykių vyks animacija</li>
+        <li>animation-direction - animacijos kryptis (normal(default), reverse, alternate, alternate-reverse)</li>
+        <li>animation-fill-mode - kaip animuotas elementas elgiasi prieš animaciją ir po animacijos</li>
+        <li>animation-play-state - ar animacija vykdoma</li>
+        <li>animation-name - animacijos vardas (susigalvotas)</li>
+        <li>animation - nurodai visus animacijos stilius (svarbu duration nurodyti ankščiau negu delay)</li>
+      </ul>
+      <p>
+        Animacijos veiksmai nurodomi naudojant @keyframes (daugelį būsenų). Kiekvienas keyframe'as (būsena) yra nurodoma % dalimi.
+      </p>
+      <div class="animationPvz">
+        <div>Animate ME!</div>
+        <img src="./images/marvel1.png" alt="ant man">
+      </div>
+    </section>
+    <section>
+      <h1>Transform</h1>
+      <ul>
+        <li>rotate - rotuoja elementą nurodytoje ašyje (matavimo vienetai laipsniai(deg/rad))</li>
+        <li>translate - pozicijos kitimas (matavimo vienetai px)</li>
+        <li>scale - dydžio kitimas (matavimo vienetai skaičiais (tarsi dauginti))</li>
+        <li>skew - iškraipo elementą (tarsi tampytų už kampų) (matavimo vienetai laipsniai(deg/rad))</li>
+      </ul>
+    </section>
+    <section id="responsive">
+      <h1>Responsive CSS and MobileFirst principais</h1>
+      <p>
+        Responsive CSS'as rašomas @media ribose.
+      </p>
+      <p>
+        Mobile first principas, nes lengviau nuo mažo ekrano judėti link didelio IR mobiliųjų vartotojų yra daugiau ir jų kiekis auga sparčiau.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

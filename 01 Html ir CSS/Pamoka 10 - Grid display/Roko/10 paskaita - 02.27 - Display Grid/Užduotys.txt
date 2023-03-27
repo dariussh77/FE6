@@ -1,0 +1,8 @@
+1) Pereiti GridGarden žaidimą.
+2) Atlikti ./images/gridAndFlexTask0.PNG užduotį, atkuriant vieną išdėstymą su Flex, kitą su Grid.
+3) Atkurti ./images/grid1.PNG vaizdą naudojant grid display'ų.
+4) Atkurti ./images/grid2.PNG vaizdą naudojant grid display'ų.
+5) Atkurti ./images/grid3.PNG vaizdą naudojant grid display'ų (nereikia atkurti mėlynų vertikalių juostų).
+6) Atkurti ./images/gridOverlap.png pavaizduotą grid'ų perdengimą.
+7 extra) Per savaitę (iki HTML/CSS temos galo) atkartoti ./images/gridFlexTASK.jpg atvaizduotus išdėstymus, tiek su Flex, tiek su Grid'u (po 20, bendrai 40).
+8 extra) Sukurti periodinę elementų lentelę naudojant Grid sistemą (pvz. paveiksliukas ./images/periodicTable.PNG).

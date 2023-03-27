@@ -1,0 +1,99 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+   /*  margin: 0 5px; */
+}
+.grid>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    /* border: 3px solid black; */
+    font-size: 50px;
+
+}
+.grid {
+    height: 100vh;
+    display: grid;
+    grid: repeat(7,1fr) / 1fr;
+}
+.grid>div:nth-child(1) {
+    background-color: black;
+    color: bisque;
+}
+.grid>div:nth-child(2) {
+    background-color: red;
+    color: bisque;
+}
+.grid>div:nth-child(3) {
+    background-color: rgb(67, 117, 182);
+    color: bisque;
+}
+.grid>div:nth-child(4) {
+    background-color: rgb(19, 29, 83);
+    color: bisque;
+}
+.grid>div:nth-child(5) {
+    background-color: rgb(197, 175, 101);
+    color: black;
+}
+.grid>div:nth-child(6) {
+    background-color: rgb(89, 202, 149);
+    color: black;
+}
+.grid>div:nth-child(7) {
+    background-color: rgb(228, 224, 210);
+    color: black;
+}
+@media (min-width: 576px) {
+    .grid {
+        display: grid;
+        grid: 1fr 4fr 4fr 2fr 2fr / 1fr 2fr 1fr;
+    }
+    .grid>div:nth-child(1) {
+        grid-area: 1/1/2/4;
+    }
+    .grid>div:nth-child(3) {
+        grid-area:2/1/3/4
+    }
+    .grid>div:nth-child(2) {
+        grid-area:3/1/6/2;
+    }
+    .grid>div:nth-child(4) {
+        grid-area:3/2/4/4;
+    }
+    .grid>div:nth-child(5) {
+        grid-area:4/2/5/4;
+    }
+}
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid: 1fr 6fr repeat(3, 2fr) / repeat(4,1fr);
+    }
+    .grid>div:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+    .grid>div:nth-child(3) {
+        grid-area:2/1/3/5
+    }
+    .grid>div:nth-child(2) {
+        grid-area:1/2/2/5;
+    }
+    .grid>div:nth-child(4) {
+        grid-area:3/1/5/3;
+    }
+    .grid>div:nth-child(5) {
+        grid-area:5/1/6/5;
+    }
+    .grid>div:nth-child(6) {
+        grid-area:3/4/4/5;
+    }
+    .grid>div:nth-child(7) {
+        grid-area:4/4/5/5;
+    }
+}

@@ -1,0 +1,36 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+main>div {
+   display: flex; 
+   background-image:url('../Images/viajes-morocco-day-tours.jpg');
+   background-size: cover;
+   margin: 20px 20px 20px 20px;
+   border-bottom: 5px;
+   border-color: black;
+ }
+ label  {
+    display: block;
+ }
+ input,textarea {
+   border:none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   border-color: rgb(76, 74, 74);
+   width: 500px;
+   background-color: rgb(156, 156, 156);
+   margin: 5px 0px;
+ }
+ form {
+    padding:30px;
+    background-color: rgb(156, 156, 156);
+    width: 500px;
+    margin:50px auto;
+ }
+ .submit {
+    width: 50px;
+    color: white;
+    background-color: black;
+ }
+ h1{
+    text-align: center;
+ }
+ 

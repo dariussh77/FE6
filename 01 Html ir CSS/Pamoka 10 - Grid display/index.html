@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoka 10 -Grid Display</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+</head>
+<body>
+    <main>
+        <section id="grid"> <!-- Grid teorija -->
+            <h1>Display grid</h1>
+            <a href="https://css-tricks.com/snippets/css/complete-guide-grid/#aa-css-grid-properties" target="_blank">GridCheatSheet</a>
+            <br>
+            <a href="https://cssgridgarden.com/" target="_blank">Grid Garden</a>
+            <div>
+                <div>
+                    <h2>Parent</h2>
+                    <ul>
+                        <li>grid-template-colums: nurodome stulpelių ir kiekį ir dydį - pvz 100px 50px 100px</li>
+                        <li>grid-template-rows: nurodome eilučių kiekį ir aukštį - 50px 150px - paskutiniai duomenų savybės neatsikartoja- pasirenka dydi pagal turinio dydį</li>
+                        <li>grid-template: grid-template-rows / grid-template-colums - apjungia auk2iau esan2iu</li>
+                        <li>grid-template-area: naudojamas stambiam gridui - užvadinami tikleliio laukai sugalvotais pavadinimais</li>
+                        <li>column-gap / row-cap -strulpeliu eilučių tarpai </li>
+                        <li>gap:   row-cap column-gap pvz :10px 10px -strulpeliu eilučių tarpai </li>
+                        <li>justify-items - islygiavimas horizontaliai</li>
+                        <li>align-items- išlygiavimas vertikaliai</li>
+                        <li>place-items : align-items  justify-items</li>
+                        <li>justify-content - islygiavimas horizontaliai</li>
+                        <li>align-content- išlygiavimas vertikaliai</li>
+                        <li>place-content : align-content  justify-content</li>
+                        <li>grid-auto-row : automatiškai kuria papildomus laukelis pertekliniams elementams. išsorendžia grid-template pabaigos </li>
+                        <li>grid-auto-column</li>
+                        <li>grid-auto-flow: row column dence</li>
+                        <li>grid: grid-template-rows / grid-template-colums | grid-auto-column / grid-auto-row / grid-auto-flow</li>
+
+
+                    </ul>
+                </div>
+                <div>
+                    <h2>Children</h2>
+                    <ul>
+                        <li>grid-column-start: nurodo kurioje stulpelio linijoje prasidės elementas</li>
+                        <li>grid-column-end: nurodo kurioje stulpelio linijoje pasibaigs elementas</li>
+                        <li>grid-row-start: nurodo kurioje eilutes linijoje prasidės elementas</li>
+                        <li>grid-row-end: nurodo kurioje eilutės linijoje pasibaigs elementas </li>
+                        <li>grid-column: grid-column-start / grid-column-end</li>
+                        <li>grid-row: grid-row-start / grid-row-end</li>
+                        <li>grid-area: name | grid-row-start / grid-column-start /</li>
+                        <li>place-self:justify-self align-slef </li>
+                        <li>justify-self</li>
+                        <li>align-slef</li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h2>Special Units</h2>
+                    <ul>
+                        <li>repeat(kiek kartų, ką)</li>
+                        <li>1fr - sukirto likuti i dalis</li>
+                        <li>minmax (nuo, iki)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <h1>BANDYMAI</h1>
+        <section id="gridpvz"> <!-- Grid pavyzdys -->
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </section>
+    </main>
+</body>
+</html>

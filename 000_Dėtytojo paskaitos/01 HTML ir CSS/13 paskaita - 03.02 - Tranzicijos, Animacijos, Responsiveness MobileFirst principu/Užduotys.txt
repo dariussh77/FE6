@@ -1,0 +1,7 @@
+1) Sukurti mygtuką, ant kurio užėjus su pele(kursoriumi), per labai mažą laiko tarpą pasikeistų jo fono ir teksto spalva (gal vos vos padidėtų).
+2) Padaryti elemento levitavimo efektą (kiltų aukštyn -> leistūsi žėmyn ir pastoviai kartotųsi) su animacija.
+3) Atkartoti CSS Diner esantį elementų vingiavimą su animacija.
+4) Perskaityti https://www.invisionapp.com/inside-design/mobile-first-design/
+5) Atkartoti images/responsiveTask1.PNG esančius kortelių išdėstymus naudojant @media su min-width nustatymais judant nuo Mobile iki Desktop.
+6) Atkartoti images/responsiveTask2.jpg esančius ekrano išdėstymus naudojant @media su min-width nustatymais judant nuo Mobile iki Desktop.
+7 extra) Atkartoti images/GreyCloudDesktop|Mobile.PNG naudojant  @media su min-width nustatymais judant nuo Mobile iki Desktop.

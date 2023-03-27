@@ -1,0 +1,43 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+main {
+    margin: 50px;
+}
+main > div {
+    display:inline-block;
+}
+main > div > div {
+    display: block;
+    background-color: brown;
+    height: 100px;
+    width: 600px;
+    border-color: black;
+}
+.geltona {
+    background-color: rgb(209, 191, 24);
+}
+.zalia {
+    background-color: green;
+}
+.raudona {
+    background-color: red;
+}
+.juoda {
+    background-color: black;
+}
+.melyna {
+    background-color: blue;
+}
+.balta {
+    background-color: bisque;
+}
+.perejimas {
+    width: 600px;
+    height: 300px;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(133, 36, 36) 0% 33%,
+        bisque 33% 66%,
+        rgb(133, 36, 36) 66%
+        
+    );
+}

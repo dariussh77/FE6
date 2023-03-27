@@ -1,0 +1,58 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    margin:20px;
+}
+*[class~*="bi"] { 
+    color: aqua;
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+} 
+p{
+    color: blue;
+}
+li::before {
+    content: ") ";
+
+}
+li::first-letter {
+    font-size: 25px;
+}
+li::first-line {
+    color: brown;
+}
+
+li::marker {
+    color:blue;
+}
+input::placeholder {
+    color:burlywood;
+}
+*::selection {
+    background-color: rgb(210, 255, 127);
+    color: rgb(46, 138, 87);
+}
+div>p:first-of-type {
+    color: blueviolet;
+}
+div>p:first-child {
+    color: chocolate;
+}div>*:first-of-type {
+    color: cornflowerblue;
+}
+div>*:only-of-type {
+    background-color: blue;
+}
+div > *:nth-child(3n) {
+    background-color: blueviolet;
+}
+div > *:nth-of-type(2n) {
+    background-color: rgb(43, 226, 125);
+}
+li:nth-child(2n) {
+    background-color: rgb(164, 207, 193);
+}

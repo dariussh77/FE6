@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Formų valdymas</title>
+  <script src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main>
+    <section id="pirmaForma">
+      <h1>Pirmoji forma - Vardo ir Pavardės ilgis</h1>
+      <form>
+        <div>
+          <label for="vardas">Vardas</label>
+          <input type="text" name="vardas" id="vardas">
+        </div>
+        <div>
+          <label for="pavarde">Pavardė</label>
+          <input type="text" name="pavarde" id="pavarde">
+        </div>
+        <input type="submit" value="Skaičiuoti">
+        <!-- <button>Pateikti1</button> -->
+      </form>
+      <h3 id="pirmosFormosAts">Jūsų vardo ilgis yra: <span>0</span> raidžių ilgio</h3>
+    </section>
+    <section>
+      <h1>Matematika</h1>
+      <h3>Sudėtis</h3>
+      <form id="sudetiesForma">
+        <input 
+          type="number"
+          name="pirmasSudetiesDomuo" 
+          id="pirmasSudetiesDomuo" 
+          placeholder="pirmasDomuo..."
+        >
+        <span> + </span>
+        <input 
+          type="number"
+          name="antrasSudetiesDomuo" 
+          id="antrasSudetiesDomuo" 
+          placeholder="antrasDomuo..."
+        >
+        <input type="submit" value="=">
+        <span id="sudetiesAts"></span>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

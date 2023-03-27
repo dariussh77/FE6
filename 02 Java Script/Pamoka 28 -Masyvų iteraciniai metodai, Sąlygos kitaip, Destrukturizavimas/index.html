@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P28 Masyvų iteraciniai metodai ir Sąlygos advanced</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section id="forEach">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank"> ForEach metodas</a></h1>
+            <h3>Syntax:</h3>
+            <p>
+                forEach((element)=>{veiksmai})a
+                forEach((element,i)=>{veiksmai})
+                forEach((element,i,array)=>{veiksmai})
+            </p>
+            <p>Suka ciklą per visą masyvą ir kiekvienos iteracijos metu atlieką veiksmus su tos iteracijos masyvo elementu. ForEach neturi return</p>
+        </section>
+        <section id="filter">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank"> Filter metodas</a></h1>
+            <h3>Syntax:</h3>
+            <p>
+                filter((element)=>{veiksmai})
+                filter((element,i)=>{veiksmai})
+                filter((element,i,array)=>{veiksmai})
+            </p>
+            <p>Suka ciklą per visą masyvą ir tikrina ar i-tas atitinka sąlygas, jei tenkina, jis gražinamas, jei ne negrazinamas- yra return</p>
+        </section>
+        <section id="map">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank"> MAp metodas</a></h1>
+            <h3>Syntax:</h3>
+            <p>
+                map((element)=>{veiksmai})
+                map((element,i)=>{veiksmai})
+                map((element,i,array)=>{veiksmai})
+            </p>
+            <p>Suka ciklą per visą masyvą ir kiekvienos iteracijos metu kažkaip koreguoja masyvo elementą ir gražina į naują masyvą </p>
+        </section>
+        <section id="reduce">
+            <h1>Reduce metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                reduce((acumulator,currentValue)=>{veiksmai})
+                reduce((acumulator,currentValue,i)=>{veiksmai})
+                reduce((acumulator,currentValue,i,array)=>{veiksmai})
+
+                reduce((acumulator,currentValue)=>{veiksmai},initialValue)
+                reduce((acumulator,currentValue,i)=>{veiksmai},initialValue)
+                reduce((acumulator,currentValue,i,array)=>{veiksmai},initialValue)
+            </p>
+            <p>Suka ciklą per visą masyvą ir iteracijos metu su accumulator(reikšmė, kurią gražino praeitas ciklas) atlieka kažkokį veiksmą, naudodamas šios iteracijos elementą(masyvas[i]- currentValue). Metodo gale, gražina vieną reikšmė(visų masyvo elemntų rezultatą). jeigu yra nurodyta pradinė reikšmė ir pirmuoju masyvo elementu. Jeigu nėra nurodyta InitialValue tuomet pirmosios itearacijos metu yra atliekami su pradine reikšme ir antrąją masyvo reiksme</p>
+        </section>
+        <section id="reduceRight">
+            <h1>ReduceRight metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                reduce((acumulator,currentValue)=>{veiksmai})
+                reduce((acumulator,currentValue,i)=>{veiksmai})
+                reduce((acumulator,currentValue,i,array)=>{veiksmai})
+
+                reduce((acumulator,currentValue)=>{veiksmai},initialValue)
+                reduce((acumulator,currentValue,i)=>{veiksmai},initialValue)
+                reduce((acumulator,currentValue,i,array)=>{veiksmai},initialValue)
+            </p>
+            <p>Nuo reduce skiriasi tik, kad išdėsto nuo dešinės į kairę(kito galo)</p>
+        </section>
+        <section id="flatMap">
+            <h1>FlatMap metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                flatmap((acumulator,currentValue)=>{veiksmai})
+                flatmap((acumulator,currentValue,i)=>{veiksmai})
+                flatmap((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Apjungtas flat ir map metodas. </p>
+        </section>
+        <section id="some">
+            <h1>Some metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                some((acumulator,currentValue)=>{veiksmai})
+                some((acumulator,currentValue,i)=>{veiksmai})
+                some((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Kiekvienos iteracijos metu tikrina ar bent vienas iteracijos masyvo elementas atititinka sąlygą. Gražina true- jei bent vienas; false-neranda.  </p>
+        </section>
+        <section id="every">
+            <h1>every metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                every((acumulator,currentValue)=>{veiksmai})
+                every((acumulator,currentValue,i)=>{veiksmai})
+                every((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Kiekvienos iteracijos metu tikrina ar visi iteracijos masyvo elementai atititinka sąlygą. Gražina true- jei visi atitinka; false-jei bent vienas neatitinka.  </p>
+        </section>
+        <section id="find">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank">find metodas </a></h1>
+            <h3>Syntax:</h3>
+            <p>
+                find((acumulator,currentValue)=>{veiksmai})
+                find((acumulator,currentValue,i)=>{veiksmai})
+                find((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Gražina elementą ji radęs, undifined - jei neranda   </p>
+        </section>
+        <section id="findLast">
+            <h1>find metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                find((acumulator,currentValue)=>{veiksmai})
+                find((acumulator,currentValue,i)=>{veiksmai})
+                find((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Gražina elementą ji radęs, undifined - jei neranda, bet nuo galo tikrina</p>
+        </section>
+        <section id="findIndex">
+            <h1>findIndex metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                findIndex((acumulator,currentValue)=>{veiksmai})
+                findIndex((acumulator,currentValue,i)=>{veiksmai})
+                findIndex((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Kaip indexof, bet galima surašyti ilgą sąlygą, ne vien tik === . Gražina indeksą, jei neranda -1 </p>
+        </section>
+        <section id="findLastIndex">
+            <h1>findLastIndex metodas</h1>
+            <h3>Syntax:</h3>
+            <p>
+                findLastIndex((acumulator,currentValue)=>{veiksmai})
+                findLastIndex((acumulator,currentValue,i)=>{veiksmai})
+                findLastIndex((acumulator,currentValue,i,array)=>{veiksmai})
+            </p>
+            <p>Kaip lastIndexof, bet galima surašyti ilgą sąlygą, ne vien tik === .Gražina indeksa, jei neranda -1 </p>
+        </section>
+        <hr>
+        <section id="imantiosSalygos">
+            <h1>Įmantrios sąlygos</h1>
+
+            <h3>Ternary(?:)</h3>
+            <p>Ternary - sąlygos sutrumpinimas su ?: zr.pavyzdi:</p>
+            <p>kintamasis1>x?veiksmas_true:kintamais2>y?veiksmas_else_if_true:veiksmas_else;</p>
+            <h3>Logical and &&</h3>
+            <p>Kaip ternary vietoj ? - &&, o else ir else if nebėra:</p>
+            <p>kintamasis1>x && veiksmas_true(kitų veiksmų negali būti)</p>
+        </section>
+        <section id="destrukturizavimas">
+            <H1>Destruktūrizavimas</H1>
+            <p>Elementų reikšmių išskirtymas dalimis. Arba visų masyvo duomenų pavertimas kintamaisiais</p>
+            <h3>Masyvų greitas išskaidymas pavieniais kintamaisiais:</h3>
+            <p>let [d0,d1,d2='default, jei nėra duomens',...likucioMasyvas]=masyvas</p>
+            <h3>Objektų greitasis iškirtymas pavieniai kintamaisiais:</h3>
+            <p>let {key0:suteikiamasVardas, key1:{key1_1:suteikiamasVardas2},key3='DEfault, jei nėra duomens', ...likutisObjekto}=objektas;</p>
+        </section>
+        <section id="kitosGudrybes">
+            <H3>Kintamųjų duomenų sukeitimas vietomis</H3>
+            <p>[a,b]=[b,a];</p>
+            <H3>Funkcijos funkcijose</H3>
+            <p>function sudetis(sk1,sk2,...skN){
+                return sk1+sk2+skN.reduce((acc,curr)=>acc+curr,0);
+            }</p>
+        </section>
+    </main>
+</body>
+</html>

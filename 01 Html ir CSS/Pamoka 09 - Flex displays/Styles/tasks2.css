@@ -1,0 +1,35 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+img{
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+.speakers {
+    color: bisque;
+    background-color: #00253f;
+    border: 2px solid   black;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.zydra {
+    color: aqua;
+    font-size: 70px;
+    
+
+}
+.bigBlock {
+    flex: 2 0 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.blokas {
+    flex: 1 0 0;
+    border: 2px solid white;
+    width: 200px;
+    height: 600px;
+}

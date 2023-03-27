@@ -1,0 +1,73 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+$fono_spalva: rgb(245, 242, 207);
+$pilka: rgb(228, 224, 224);
+$header_spalva: rgb(105, 190, 94);
+body {
+    background-color: $fono_spalva;
+}
+header {
+    margin:10px;
+    background-color: $header_spalva;
+    color: $fono_spalva;
+    >div {
+        padding: 20px 50px;
+        >h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+#filter {
+    margin: 20px 50px
+}
+#mygtukai{
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    >div:nth-child(1) {
+        >button {
+            height: 30px;
+            width: 90px;
+            border-radius: 5px;
+            background-color: $fono_spalva;
+            border: 3px solid $pilka;
+        }
+        >button:nth-child(1) {
+            color: $header_spalva;
+            border: 3px solid $header_spalva;
+        }    
+    }
+    >div:nth-child(2) {
+        display: flex;
+        color: $fono_spalva;
+        height: 30px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: $header_spalva;
+        border: 1px solid $pilka;
+        justify-content: center;
+        align-items: center;
+   }
+}
+#nuotraukos {
+    >div {
+        margin: 30px 50px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        div {
+            box-shadow: 5px 5px 5px 5px $pilka;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            >img {
+                width:200px;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+}

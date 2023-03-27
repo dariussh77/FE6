@@ -1,0 +1,47 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.table1 {
+    border-collapse: collapse;
+    border: 1px solid rgb(23, 121, 72);
+}
+.table1 td {
+    border: 1px solid rgb(23, 121, 72);
+}
+.table1 th {
+    border: 3px solid rgb(35, 21, 158);
+
+}
+.table1 td:nth-child(2n+1) {
+    background-color: aqua;
+}
+.table1 td:first-child {
+    color:brown;
+    font-size: 20px;
+    font-weight: 700;
+}
+.table1 td:last-child {
+    color:brown;
+    font-size: 20px;
+    font-weight: 300;
+}
+.table1 tbody>tr:first-child {
+    background-color: blueviolet;
+}
+.table1 tbody>tr:nth-child(2n+1) {
+    background-color: rgb(216, 159, 37);
+}
+.table2 {
+    border-collapse: collapse;
+    border: 1px solid rgb(121, 23, 100);
+}
+.table2 thead{
+     border: 1px solid rgb(121, 23, 100);
+}
+.table2 td:hover,th:hover {
+    background-color: coral;
+}
+.table2 tr:hover{
+    background-color: rgb(45, 37, 116);
+}

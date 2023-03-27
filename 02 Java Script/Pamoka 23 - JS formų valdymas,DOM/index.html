@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P23 JS Formų val</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+    <section id="pirmaForma">
+    <form>
+        <h1>Pirmoji forma - Vardas ir Pavardė</h1>
+        <div>
+            <label for="vardas">Vardas</label>
+            <input type="text" name="vardas" id="vardas">
+        </div>
+        <div>
+            <label for="pavarde">Pavardė</label>
+            <input type="text" name="pavarde" id="pavarde">
+        </div>
+        <input type="submit" value="Skaičiuoti">
+    </form>
+    <h3 id="pirmosFormosAts">Jūsų vardo ilgis:</h3>
+    </section>
+
+    <section id="antraForma">
+        <h1>Matematika</h1>
+        <h3>Sudėtis</h3>
+        <form id="sudetiesForma">
+            <input type="number" name="pirmasSudetiesDuomuo" placeholder="sk1" id="pirmasSudetiesDuomuo">
+            <span>+</span>
+            <input type="number" name="antrasSudetiesDuomuo" placeholder="sk2" id="antrasSudetiesDuomuo">
+            <input type="submit" value="=">
+            <span id="sudetiesAts"></span>
+
+        </form>
+    </section>
+    </main>
+</body>
+</html>

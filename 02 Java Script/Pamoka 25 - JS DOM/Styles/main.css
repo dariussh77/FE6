@@ -1,0 +1,46 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+.raudonasTekstas{
+    color: red;
+}
+.didelisTekstas{
+    font-size: 4rem;
+}
+.centruotasTekstas{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.flex-wrap{   
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.gap-1{
+    gap: 5px;
+}
+.gap-2{
+    gap: 10px;
+}
+.kortele1{
+    padding: 10px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    width: 500px;
+}
+.kortele1>h3{
+    text-align: center;
+    color: blue;
+}
+.kortele1>img{
+    width:300px;
+    height: auto;
+}
+.kortele1>p{
+    text-align: justify;
+}

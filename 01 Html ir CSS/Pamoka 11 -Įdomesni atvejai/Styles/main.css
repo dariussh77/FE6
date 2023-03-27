@@ -1,0 +1,77 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    font-family: 'Roboto', sans-serif;
+}
+main>section {
+    padding:10px 100px;
+ 
+}
+.post {
+    display: flex;
+    gap:15px;
+}
+.postDate{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.postInfo > *{
+    margin:0;
+}
+.gridOverlap{
+    width: 630px;
+    height: 460px;
+    display: grid;
+    grid: repeat(4, 1fr) / 2fr 1fr 1fr 2fr 1fr;
+}
+.gridOverlap>div {
+    background-position: center;
+    background-size: cover;
+    
+}
+.firstImage {
+    background-image: url(../images/moteris1.jfif);
+    grid-area: 2/1/4/4;
+    z-index: 1;
+}
+.secondImage {
+    background-image: url(../images/moteris2.webp);
+    grid-area: 1/2/3/5;
+}
+.thirdImage {
+    background-image: url(../images/vyras.webp);
+    grid-area: 3/3/5/6;
+}
+.card{
+    height: 500px;
+    width: 500px;
+    background-image: url(../images/andromeda.png);
+    background-position: center;
+    background-position: cover;
+    color: white;
+    position: relative;
+}
+.textBox {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

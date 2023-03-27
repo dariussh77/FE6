@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P26,27 - Primityvių duomenų tipų metodai - Masyvų neiteraciniai metodai, Funkcijų rašymo būdai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section style="background-color: bisque;position:sticky; top:0;">
+            <h4><a href="./scripts/main.js">JS main</a></h4>
+            <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+        </section>
+        <section style="scroll-padding-top: 200px;" id="metodai">
+            <h1>Metodai</h1>
+             <p>Metodai - jaus sukurtos funkcijos, kurios priklauso kažkokiam specifiniam elementui.</p>
+             <p>Metodai skirti tam, kad prageitintų/palenvintų programuotojų darbą.</p>
+        </section>
+        <hr>
+        <section id="booleanMetodai">
+            <h1> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank">Boolean Metodai</a></h1>
+            <ul>
+                <li>Boolean.toString() - paverčia į tekstą 'true'arba 'false'</li>
+                <li>Boolean.valueOf() - tiesiog išveda true arba false naudojant truthy ar falsy išraiškose</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="numberMetodai">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number Metodai</a></h1>
+            <h3>Propieties:</h3>
+            <ul>
+                <li>Number.MAX_SAFE_INTEGER - išveda maksimalų saugus sveikasis skaičių 2laipniu53-1</li>
+                <li>Number.MIN_SAFE_INTERGET - išveda maksimalų saugus sveikasis skaičių 2laipniu53-1</li>
+                <li>Number.MAX_VALUE - maksimalus skaičius, kuri padidinus *2 gauname Infinity</li>
+                <li>Number.POSITIVE_INFINITY - teigiama begalybė</li>
+                <li>Number.NEGATIVE_INFINITY - BEGALYBĖ į minus</li>
+                <li>Number.MIN_VALUE-minimalus skaičius, kuri padidinus /2 gauname Infinity</li>
+                <li>Number.EPSILON - išveda ypač mažą skaičių</li>
+                <li>Number.NaN - išvedamas NaN - ne skaičius</li>
+                
+            </ul>
+            <h3>Metods:</h3>
+            <ul>
+                <li>Number.isFinite() - ar baigtinis skaičius duoda atsakymą true arba false (2/3- baigtinis)</li>
+                <li>Number.parseInt- konvertuoja į skaičių išveda tik sveikąją dalį, neapvalina.</li>
+                <li>Number.parseFloat - konvertuoja į skaičių.</li>
+                <li>.toFixed(n) - suapvalina iki n-to skaičiaus po kalblelio 5.6666.tofixed(2)=5.67</li>
+                <li>Number.isInteger(3.6) - ar sveikasis true/false</li>
+                <li>...</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="mathMetodai">
+            <h1> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math" target="_blank">Math Metodai</a></h1>
+            <h3>Propeties:</h3>
+            <ul>
+                <li>Math.PI() - išveda Pi reikšmę</li>
+                <li>Math.E - išveda Eulerio skaičių 2.718</li>
+                <li>...</li>
+            </ul>
+            <h3>metods:</h3>
+            <ul>
+                <li>Math.abs() - paverčia į teigiamą ir sveiką</li>
+                <li>Math.cbrt() - kubinė šaknis</li>
+                <li>Math.sqrt() - kvadratinė šaknis išveda tik teigiamą atsakymą</li>
+                <li>Math.pow(a,b)- a kėlimas b laipniu</li>
+                <li>Math.ceil(x) - apvalinama iki x po kablelio į viršų</li>
+                <li>Math.floor(x) - apvalinama iki x po kablelio žemyn</li>
+                <li>Math.hypot() - paskaičiuoti ilgį linijos iš taškų koodinačių- Pitagoro teorema, galima iš daugiau skaičių</li>
+                <li>Math.trunc - kai teigiamas apvalina kaip floor, bet kai neigiamas kai</li>
+                <li>Math.max(a,b,c)- parenka iš duotų skaičių didžiausią</li>
+                <li>Math.min(a,b,c) -parenka mažiausią skaičių iš a,b,c</li>
+                <li>Math.random()*x- sukuria atsitiktinį skaičių tarp (0 ir 1), kuri galime dauginti iš x ir bus atsitiktinis skaičius bet kokiose ribose,  o paskui ROUND.</li>
+                <li>Math.sign()- išveda -1, -0, 0, 1 tikrina neigiamas/teigiamas</li>
+                <li>Math.round()- apvalina iki sveiko pagal taisykles</li>
+                <li>...</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="stringMetodai">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String Metodai</a></h1>
+            <h3>Properties:</h3>
+            <ul>
+                <li>.length - duota stingo ilgį</li>
+            </ul>
+            <h3>Methods:</h3>
+            <ul>
+                <li>String.prototype.at(-/+4) - parenka raidė Nr.0-xxx ir gali skaičiuoti nuo galo -</li>
+                <li>String.prototype.charAt(+4) - parenka raidė Nr.0-xxx  ir neina i minusa</li>
+                <li>String.prototype.concat() - sujungia stringus</li>
+                <li>String.prototype.endsWith() - patikrinti galųnę true/false</li>
+                <li>String.prototype.startsWith() - patikrinti pradžią true/false</li>
+                <li>String.prototype.includes() - ar yra kazkos raktinis žodis true/false</li>
+                <li>String.prototype.indexOf()- kurioje vietoje randa, neradus išduoda -1</li>
+                <li>String.prototype.lastIndexOf() - kurioje vietojeranda iš galo, neradus išduoda -1</li>
+                <li>String.prototype.localeCompare()- tikrina viena kintamaji su kitu: jei === išveda 0, jei !== išmeta 1</li>
+                <li>String.prototype.padEnd(x,'*') - prideda * simbolius nuo galo iki užpildant iki x-ojo simbolio  </li>
+                <li>String.prototype.padStart(x,'*') -  prideda * simbolius nuo pradžios iki užpildant iki x-ojo simbolio   </li>
+                <li>String.prototype.repeat(n) - atkartoja žodį n kartų nededa tarpų </li>
+                <li>String.prototype.slice(n,m) - iškerpa nuo n arba -n(arba iki m/-m)</li>
+                <li>String.prototype.substring()- kaip ir slice bet -n laiko 0, negalima skaičiuoti nuo 0, tik galima apversti krypti iškirpimo </li>
+                <li>String.prototype.split("a")- suformuoja masyvą dėmenis išksiado pagal a simbolį- " " arba '\n' (pastraipos)</li>
+                <li>String.prototype.toLocaleLowerCase()- paverčia į mažasias????????????????????</li>
+                <li>String.prototype.toLocaleLowerCase()-paverčia į mažasias??????????????????????</li>
+                <li>String.prototype.toLowerCase()-paverčia į didžiąsias</li>
+                <li>String.prototype.toUpperCase() - paverčia į didžiąsias</li>
+                <li>String.prototype.trim() - panaikiną WhiteSpace (tarpelius) nuo pradžios ir nuo galo nepakeičia Stringo</li>
+                <li>String.prototype.trimEnd()- panaikiną WhiteSpace (tarpelius)  nuo galo nepakeičia Stringo</li>
+                <li>String.prototype.trimStart()-panaikiną WhiteSpace (tarpelius) nuo pradžios nepakeičia Stringo</li>
+                <li>String.prototype.valueOf()-išveda tik duomenį, naudinga ,jei tekstas išvedamas masyvu.</li>
+                <li></li>
+
+                <li>.match() - nesuprasntu?????????</li>
+                <li>.matchAll - nesuprantu??????????????</li>
+                <li>.replace('rytas','vakaras') - pakeičia pirmą rastą vieną zodį į kitą nekeičia org stringo</li>
+                <li>.replaceAll('rytas','vakaras') - pakeičia visus rastus zodžius į kitus nekeičia org stringo.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <hr>
+        <section id="masyvuMetodai">
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Masyvų neiteraciniai Metodai</a></h1>
+            <h3>Properties:</h3>
+            <ul>
+                <li>.length - duota masyvo ilgį</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h3>Methods:</h3>
+            
+            <ul>
+                <li>Array.prototype.at() - veikia kaip [] - galima naudoti su minusu rasti nuo galo.</li>
+                <li>Array.prototype.concat(array2) - apjungia du masyvus</li>
+                <li>Array.prototype.copyWithin() - pakeičia masyvo[i] iš duomenimis iį savęs paties</li>
+                <li>Array.prototype.entries() - iteruojamas masyvas - galima duomenis išvesti vienas po kito tuo pačiu kodu masyvas.next().value -Išvedanauja masyvą vienas po kitą susidarančio iš iteratoriaus ir duomens. </li>
+                <li>Array(n).prototype.fill(a,i,i+) - užpildyti esama masyvą a duomenimis nuo i iki i+  </li>
+                <li>Array.prototype.flat() - jei yra viduje dar masyvas, rieksmes iskeliamos į tėvinį masyvą, arba iškelti į aukštesnį lygmenį()===(1)</li>
+                <li>Array.from() - sukuria masyvą iš stringo, iš kito masyvo, iš ('15566')>[1,5,5,6,6]</li>
+                <li>Array.of() - sukuria masyvą suvedamų reikšmių</li>
+                <li>Array.prototype.includes() - tikrina ar yra kokia nors reikšmė: atsakymas true/false</li>
+                <li>Array.prototype.indexOf()- išveda reikšmės iteraciją, jei tokią randa.</li>
+                <li>Array.prototype.lastIndexOf()- išveda reikšmės iteraciją, jei tokią randa.</li>
+                <li>Array.isArray() - tikrina ar masyvas : true/fase</li>
+                <li>Array.prototype.join('*') - masyvą paverčia į stringą tarpuose sudeda norimus simbolius</li>
+                <li>Array.prototype.keys() - išves visus iteracijos nr.</li>
+                <li>Array.prototype.pop()- ištrina paskutinę reikšmę</li>
+                <li>Array.prototype.push()- prideda reikšme gale: galima kelias vienu metu</li>
+                <li>Array.prototype.reduce()</li>
+                <li>Array.prototype.reduceRight()</li>
+                <li>Array.prototype.reverse()- apvercią masyvą -paskutinis pasidaro 1</li>
+                <li>Array.prototype.shift()- iš pradžios išima ir pakeičia mąsyvą</li>
+                <li>Array.prototype.unshift()- prideda reikšmes pradzioje ir pakeičia mąsyva:galima kelias vienu metu</li>
+                <li>Array.prototype.slice()</li>
+                <li>Array.prototype.sort()</li>
+                <li>Array.prototype.splice()-??????????????????</li>
+                <li>Array.prototype.toLocaleString()- su datomis naudojamas????????????????????</li>
+                <li>Array.prototype.toString()- pavečia į stringą, bet negali pridėti atskyrimo</li>
+                <li>Array.prototype.values()- gražina tik reikšmes, kaip iteruojamą masyvą</li>
+                <li></li>
+            </ul>
+        </section>
+        <hr>
+        <section id="funkcijos">
+            <h1>Funkcijos</h1>
+            <p>Apsirašai funkciją: funtion f_vardas(parametras1,parametras2){
+                    veiksmai....}
+            </p>
+            <h3>Parametrai ir Argumentai</h3>
+            <p>Iškviesti funkcija: f_vardas(argumentas1, argumentas2)</p>
+            <p>Parametrai yra duomenys, kuriuos funkcija priima ir naudoja savo viduje</p>
+            <p>Argumentai duomenys, kurie perduodami funkcijai jos kvietimo metu</p>
+            <h3>Callback Funkcija</h3>
+            <p>Kai fukcija ar metodas kreipiasi š kitą funkciją.</p>
+            <h1>Arrow function</h1>
+            <div>
+                <p>Naujoviškenis fukcijos aprašymo būdas išėjės EcmaScript6</p>
+                <p>Norint sukurti vardinę funkciją - susikurti kintamąjį, kuriam prilygini arrow funkciją.</p>
+                <p>Bevardė arrowfunkcija (par1,par2...)=>{veiksmai...}; sutmpinama -  parametras=> veiksmas</p>
+            </div>
+        </section>
+        <section style="background-color: bisque;position: fixed;">
+            <h4><a href="./scripts/main.js">JS main</a></h4>
+            <iframe src="./scripts/main.js" frameborder="0" width="700px" height="200px"></iframe>
+        </section>
+    </main>
+</body>
+</html>
