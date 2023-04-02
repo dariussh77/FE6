@@ -70,16 +70,23 @@ main{
 #taskList h3{
     margin: 0;
 }
+#taskList h3:hover{
+    cursor: pointer;
+}
+
 #taskList>div>span:first-child{
     color: green;
 }
 #taskList>div>span:last-child{
     color: brown;
 }
-.perbraukta{
+#taskList>div>span:last-child:hover{
+    cursor: pointer;
+}
+.brbi-check-circle{
     text-decoration:line-through ;
 }
-.neperbraukta{
+.brbi-circle{
     text-decoration:none;
 }
 

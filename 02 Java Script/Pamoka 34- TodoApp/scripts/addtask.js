@@ -3,10 +3,9 @@ export default class AddTask{
         return this.addTask();
     }
     addTask(){
-        window.sessionStorage.setItem('i', 0);
         this.sectionAddTask=document.querySelector('#addTask');
         this.addHeading=document.createElement('h2');
-        console.dir(this.addHeading);
+        console.log(this.addHeading);
         this.headingText=document.createTextNode('Your tasks');
         this.addHeading.appendChild(this.headingText);
         this.addForm=document.createElement('form');
@@ -20,8 +19,7 @@ export default class AddTask{
         this.addInputS.setAttribute('value', 'Add');
         this.addForm.append(this.addInputT, this.addInputS);
         this.sectionAddTask.append(this.addHeading, this.addForm);
-        console.log(this.sectionAddTask);
-        //this.sectionAddTask.addEventListener('submit', kuriamDiva);
+        console.log('Class Addtask:',this.sectionAddTask);
         return this.sectionAddTask;
     }
 }
