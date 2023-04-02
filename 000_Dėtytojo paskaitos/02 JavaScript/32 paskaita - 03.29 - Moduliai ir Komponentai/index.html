@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moduliai ir Komponentai</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <section id="moduliai">
+      <h1>Moduliai</h1>
+      <p>
+        Moduliai (moduliarizacija) - kažkokių funkcijų/kintamųjų/klasių... laikymas atskiruose failuose ir jų export'avimas ir import'avimas.<br>
+        Moduliai naudojami tam, kad visko nelaikyti viename faile, kas projektui plečiantis gali tapti labai sudėtinga susigaudyti faile.
+      </p>
+      <p>
+        Export - suteikiama galimybė kažkokioms funkcijoms/kintamiesiems/klasėms... būti pasiekiamiems iš kitų failų.<br>
+        export default name - eksportuojamas pagrindinis failo elementas. Gali būti tik vienas defaultinis export'as per vieną failą.<br>
+        export { name1, name2, ... } - eksportuojami papildomi elementai. Galima eksportuoti kiek nori, juos rašant į {} ir atskiriant kableliais.
+      </p>
+      <p>
+        Import - suteikia galimybę pasiekti kažkokias funkcijas/kitamuosius/klases... iš kitų failų.<br>
+        import anyNameYouWant from './fileRouteAndFile' - importuojamas pagrindinis nurodyto failo elementas. Jį galime importuoti kokiu tik patys norime vardu.<br>
+        import { name1, name2, ... } from './fileRouteAndFile' - importuojami TIK nurodyti papildomi elementai. Importuojant papildomus elementus, reikia nurodyti jų specifinius vardus.<br>
+        import { name1 as somethingElse, name2, ... } from './fileRouteAndFile' - po importuojamo elemento pavadinimo parašius žodelį "as" galima nurodyti kokiu kitu pavadinimu į tą elementą šiame faile kreiptis.<br>
+        import anyNameYouWant, { name1 as somethingElse, name2, ... } from './fileRouteAndFile' - galima importuoti IR default IR paprastą IR paprastą pervadintą...
+      </p>
+    </section>
+    <section id="komponentai">
+      <h1>Komponentai (ne React)</h1>
+      <p>
+        Komponentas - puslapio sudedamoji dalis.
+      </p>
+    </section>
+    <section id="test">
+      <!-- <div class="card">
+        <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2012/02/06/1feb5e95-a644-11e2-a3f0-029118418759/thumbnail/1200x630/64a9aba33675cad48043257194ebc838/breading-cats-q013.jpg" alt="cat ale bread">
+        <div>
+          <h1>Pavadinimas</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nesciunt obcaecati non praesentium quasi delectus vel dolor facere distinctio quia!
+          </p>
+        </div>
+      </div> -->
+      <!-- <ol class="vienaKlase kitaKlase">
+        <li class="liKlase">Pirmas</li>
+        <li class="liKlase">Antras</li>
+        <li class="liKlase unikaliKlase">Ne Pirmas</li>
+        <li class="liKlase">Kažkelintas</li>
+        <li class="liKlase">Paskutinis maybe</li>
+      </ol> -->
+      <table>
+        <thead>
+          <tr>
+            <th>Vardas</th>
+            <th>Pavardė</th>
+            <th>Amžius</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rokas</td>
+            <td>Banaitis</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>Petras</td>
+            <td>Petrauskas</td>
+            <td>55</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

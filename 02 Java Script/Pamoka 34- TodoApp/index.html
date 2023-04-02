@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P34 - ToDO app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script type="module" src="./scripts/main.js" defer></script>
+    <!-- <script src="./scripts/main_be kasiu.js" defer></script> -->
+    <script src="./scripts/data.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section id="uzduotis">
+            <h1>Užduotis:</h1>
+            <p>
+                Sukurti ToDo aplikaciją:<br>
+                Kuriant UI galima naudotis vizualiu pavyzdžiu esančiu ./images/toDoApp.PNG
+                <br>
+                <br>
+                Aplikacijoje reikia turėti galimybes: <br>
+                  Sukurti naują task'ą. <br>
+                  Pažymėti task'ą kaip atliktą. <br>
+                  Atžymėti task'ą kaip neatliktą.<br>
+                  Ištrinti task'ą.
+                <br>
+                <br>
+                1) Sukurti aplikaciją nenaudojant Klasių, nei duomenų, nei duomenų saugojimo vartotojo dalyje.<br>
+                2) Patobulinti aplikaciją, kad nauji elementai būtų kuriami su Klasės pagalba. Toje pačioje klasėje būtų aprašyti ir funkcionalumai kaip metodai, kurie būtų kviečiami nuspaudus atitinkamą vietą elemente.<br>
+                3) Patobulinti aplikaciją taip, kad elementai būtų sukuriami iš duomenų kintamojo.<br>
+                4) Patobulinti aplikaciją taip, kad duomenys keistųsi, priklausomai nuo vartotojo atliekamų veiksmų vartotojo sąsajoje. Kai sukuriamas naujas elementas - pasipildytų duomenys; kai ištrinamas esantis elementas - jis būtų išimamas iš duomenų; kai pažymimas kaip atliktas arba neatlikas - duomenyse pasikeistų jo atlikimo statusas.<br>
+                5) Patobulinti aplikaciją taip, kad duomenys būtų saugojami, trinami arba redaguojami localStorage'e.
+            </p>
+        </section>
+        <section id="addTask">
+            <!-- <H2>Your Tasks</H2>
+            <form>
+                <input type="text" id="uzdAdd" name="uzdAdd" placeholder="e.g wash dishes">
+                <input type="submit" value="Add">
+            </form> -->
+        </section>
+        <section id="taskList">
+            <!-- <div>
+                <span><i class="bi bi-check-circle"></i></span>
+                <h3 id="h3">Take out trash</h3>
+                <span><i class="bi bi-trash3-fill"></i></span>
+            </div>    
+            <div>
+                <span><i class="bi bi-check-circle"></i></span>
+                <h3>Walk the dog</h3>
+                <span>&#xF840</span>
+            </div>    -->  
+        </section>
+    </main>
+</body>
+</html>

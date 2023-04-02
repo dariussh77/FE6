@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git ir GitHub IR Klasės</title>
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="gitIrGithub">
+      <h1>Git ir GitHub</h1>
+      <p>Git - kodo versijavimo programa</p>
+      <p>GitHub - svetainė, kurioje talpinamas versijuotas kodas ir juo dalinamasi tarp programuotojų</p>
+      <div id="github">
+        <a href="https://www.github.com" target="_blank">Nuoroda į GitHub</a>
+        <ol>
+          <li>Užsiregistruoti į GitHub'ą (susikurti paskyrą)</li>
+          <li>Prisijungti prie GitHub'o</li>
+        </ol>
+      </div>
+      <div id="commandLine">
+        <h1>Komandinės eilutės komandos</h1>
+        <ul>
+          <li>TAB - užbaigia rašomą eilutę arba pasiūlo variantus (nenaudoti ant tuščios komandinės eilutės)</li>
+          <li>ls - išvardina direktorijas ir failus (list'ina)</li>
+          <li>cd - direktorijos keitimas (change directory)</li>
+          <li>CTRL C - atšaukia vykdomą komandą / stabdo procesus</li>
+          <li>clear - išvalo terminalo eilutes</li>
+          <li>direktorijosKūrimas, failųKūriams, trinimas, perkelimas/pervadinimas, failųKoregavimas</li>
+        </ul>
+      </div>
+      <div id="git">
+        <a href="https://git-scm.com" target="_blank">Nuoroda į Git</a>
+        <h1>Git Komandos</h1>
+        <ul>
+          <li>git init - sukuria git'o repozitoriją</li>
+          <li>git add nurodytiFailai - pridėti koreguotus/naujus failus/aplankalus prie paruoštų failų kodo versijos kūrimui (commit'ui)</li>
+          <li>git commit -m - iš paruoštų (staged) failų/aplankalų sukuriama kodo versija su atitinkama žinute (message (-m)), nusakančia kas toje kodo versijoje pakito</li>
+          <li>git status - grąžina informacija apie dabartinės kodo versijos būklę (statusą)</li>
+          <li>git push - nusiunčia commit'us į išorinę repozitoriją (gitHub'ą)</li>
+          <li>git pull - atsiunčia commit'us iš išorinės repozitorijos (gitHub'o)</li>
+        </ul>
+        <h1>Git konfiguracijos</h1>
+        <ul>
+          <li>git config --global user.name "Tavo GitHub paskyros vardas"</li>
+          <li>git config --global user.email "PrivaluTasPastasKuriuoKureiGitHubPaskyra@gmail.com"</li>
+          <li>git config --global core.editor "code"</li>
+          <li>git config --global core.autocrlf true (vietoje "true" rašyti "input" jeigu linux/mac)</li>
+          <li>git config --global -e</li>
+          <li>git config --help</li>
+        </ul>
+      </div>
+    </section>
+    <section id="klases">
+      <h1>Klasės (Class)</h1>
+      <p>
+        Klasės yra skirtos generuoti naujus objektus.
+      </p>
+      <p>
+        Klasė yra objektų kūrimo šablonas.<br>
+        Klasė privalo būti aprašyta prieš kreipiantis į ją.<br>
+        Klasės rašomos iš didžiosios reidės.<br>
+        Klasės konstruktoriuje privalo būti "this".
+      </p>
+
+      <h2>Object Orientated Programming principai</h2>
+      <ul>
+        <li>Paveldėjimas</li>
+        <li>Polimorfizmas</li>
+        <li>Abstrakcija</li>
+        <li>Inkapsuliacija</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+</html>

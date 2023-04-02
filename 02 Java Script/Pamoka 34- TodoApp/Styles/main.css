@@ -1,0 +1,86 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    gap:50px;
+    margin:0 auto;
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#uzduotis{
+    width: 500px;
+}
+#addTask h2 {
+    margin:0;
+}
+#addTask{
+    padding:20px;
+    width:500px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px 2px rgb(177, 177, 177);
+}
+#addTask> form>:first-child{
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgb(228, 225, 225);
+    width: 300px;
+    padding: 5px;
+}
+#addTask> form>:first-child::placeholder{
+    color: rgb(210, 210, 210);
+}
+#addTask> form>:last-child{
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius:0 5px 5px 0;
+    width: 100px;
+    background-color: rgb(173, 144, 240);
+}
+#addTask form {
+    display: flex;
+}
+
+
+/* ----------- */
+
+#taskList{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#taskList>div{
+    padding: 20px;
+    display: grid;
+    grid:1fr/1fr 7fr 1fr;
+    gap:20px;
+    justify-items: left;
+    align-items: center;
+    width: 500px;
+    box-shadow: 5px 5px 10px 2px rgb(177, 177, 177);
+}
+#taskList h3{
+    margin: 0;
+}
+#taskList>div>span:first-child{
+    color: green;
+}
+#taskList>div>span:last-child{
+    color: brown;
+}
+.perbraukta{
+    text-decoration:line-through ;
+}
+.neperbraukta{
+    text-decoration:none;
+}
+
+

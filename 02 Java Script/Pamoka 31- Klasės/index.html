@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P31 - Klasės</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+        <h4><a href="./task1.html">Namų darbai - task1.html</a></h4>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section>
+                <H1>Data</H1>
+                <p>
+                    new Date() - dabartinė data <br>
+                    new Date().getFullYear() - tik metai <br>
+                    new Date(15milisekudėmis).getFullYear() - 1970
+                </p>
+                <h1>Setter ir getter</h1>
+                <p>Tai metodai leidžiantys paimti ir įrašyti apsaugotus duomenis</p>
+                <p>Privatus duomenys - #pavadinimas -neleidzia pakeisti be setPavadinimas ir getPavadinimas</p>
+        </section>
+        <hr>
+        <section id="newCars">
+            <form>
+                <input type="text" name="make" id="make" placeholder="Car make..."><br>
+                <input type="text" name="model" id="model" placeholder="Car model..."><br>
+                <input type="number" name="year" id="year" placeholder="Car Year..."><br>
+                <input type="number" name="basePrice" id="basePrice" placeholder="Car basePrice..."><br>
+                <select name="engineType" id="engineType">
+                    <option value="LPG">LPG</option>
+                    <option value="gas">Gas</option>
+                    <option value="diesel">Diesel</option>
+                </select><br>
+                <input type="url" name="photo" id="photo" placeholder="Car photo..."><br>
+                <input type="submit" value="Pridėti mašiną">
+            </form>
+        </section>
+        <section id="cars">
+            <h1>All the cars in the garage</h1>
+            <div id="allCars">
+                <!-- Filled by Inner.HTML    -->
+            </div>
+        </section>
+        <!-- <img src="https://picsum.photos/id/111/600/400" alt=""> -->
+        <!-- <img src="https://picsum.photos/id/670/600/400" alt=""> -->
+    </main>
+</body>
+</html>

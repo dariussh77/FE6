@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P33 - Pamoka 33- Local Storage: Cookies,Local,Session storage </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js">main.js</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section id="duomenuSaugojimasVartotojoDalyje">
+            <h1>Duomenu Saugojimas Vartotojo Dalyje</h1> 
+            <img src="./images/MicrosoftTeams-image.png" alt="" width="100%">
+            <p>Cookies,Session, Local - informacija yra saugoma jūsų įrenginyje/aplikacijoje. Skirtingų svetainių informacija suagoma atskirai</p>
+        </section>
+        <section id="cookies">
+            <h1>Cookies</h1>
+            <p>
+                Svetainėje saugomi duomenys. <br>
+                Saukoma iki 4kb <br>
+                Reikia nustatyti iki kadasaugoti <br>
+                Siunčiami kartu su requestais į backendą. <br>
+                Sintaksės Pvz: document.cookie=`Pastatas=Namas; expires=${new Date('2023 04 01 14:00:00')}`
+            </p>
+        </section>
+        <section id="sessionStorage">
+            <h1>Session storage- pasibaigus sesijai ištrina</h1>
+            <p>
+                window.sessionStorage.setItem('1 savaitės diena', 'pirmadienis');<br>
+                window.sessionStorage.setItem('2 savaitės diena', 'antradienis');<br>
+                window.sessionStorage.removeItem ('1 savaitės diena');<br>
+                window.sessionStorage.clear() //išvalo visas reikšmes; <br>
+           
+            </p>
+        </section>
+        <section id="localStorage">
+            <H1>Local storage - laiko visa laika duomenis</H1>
+            <p>
+                window.localStorage.setItem('1 savaitės diena', 'pirmadienis');<br>
+                window.localStorage.setItem('2 savaitės diena', 'antradienis');<br>
+                window.localStorage.removeItem ('1 savaitės diena');<br>
+                window.localStorage.clear() //išvalo visas reikšmes;br
+             
+            </p>
+        </section>
+        <section id="json">
+            <h1> JSON - Java Script Object Notation </h1>
+            <p>JavaScipt duomenų failas. objekto keyjus imeta i kabutes.</p>
+            <p>
+               JSON.stringify -pavertimas į JSON formatą-  window.localStorage.setItem('duomenys', JSON.stringify(duomenys));<br>
+               JSON.parse - duomenų ištraukimas iš JSON - console.log(JSON.parse(window.localStorage.getItem('duomenys')))
+            </p>
+        </section>
+        <hr>
+        <section id="nodeElements">
+            <h1>NodeElementai</h1>
+        </section>
+        
+    </main>
+    
+</body>
+</html>

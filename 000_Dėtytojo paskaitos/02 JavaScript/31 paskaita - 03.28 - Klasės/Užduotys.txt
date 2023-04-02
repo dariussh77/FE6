@@ -1,0 +1,21 @@
+0) Pasikonspektuoti informaciją apie klases, jų sintaksę, rašymo taisykles ir t.t.
+
+1 optional) Pastilizuoti formą (kurios pagalba kuriamos naujos mašinos).
+1.1 optional) Perrašyti innerHTML į createElement, append, textNode....
+1.2 optional) Visą mašinos kūrimo (ar tai su append ar tai su innerHTML) dalį parašyti funkcijos viduje, į kurią galima kreiptis iš kur nori ir kiek nori kartų.
+
+2) Sukurkite klasę vardu "Rectangle" ir duokite jai "width" ir "height" parametrus.
+  2.1) Sukurkite papildomą parametrą "color" ir priskirkite jam randomly parinktą spalvą.
+  2.2) Sukurkite metodą "area", kuris grąžina stačiakampio plotą.
+  2.3) Sukurkite metodą "perimeter", kuris grąžina stačiakampio perimetrą.
+
+3) Sukurkite klasę vardu "Point" ir duokite jai "x" ir "y" parametrus.
+  3.1) Sukurkite metodą "coordinates", kuris grąžina "x" ir "y" reikšmes.(x;y)
+  3.2) Sukurkite metodą "distance", kuris grąžina atstumą tarp dviejų taškų (Point'ų). (siūlau naudoti Math.hypot() metodą).
+
+4) Sukurkite klasę vardu "Rectangle_3D" ir duokite jai "width", "height" ir "depth" parametrus.
+  4.1) Sukurkite metodą "volume", kuris grąžina 3D stačiakampio tūrį.
+  4.2) Sukurkite metodą "surfaceArea", kuris grąžina 3D stačiakampio paviršiaus plotą.
+  4.3) Sukurkite metodą "perimeter", kuris grąžina 3D stačiakampio perimetrą.
+
+5+) Pabandyti sukurti UI (User Interface (Vartotojo Sąsaja)) 2-4 užduotims ir spausdinti informaciją į ekraną. (Kas nori pasižiūrėkite JS Canvas ir su juo pabandykite atvaizduoti figūras puslapyje(bent jau 2D))
