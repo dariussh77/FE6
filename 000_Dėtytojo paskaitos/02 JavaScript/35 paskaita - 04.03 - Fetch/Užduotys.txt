@@ -1,0 +1,21 @@
+Async/await (nebūtina):
+  Savaitės bėgyje perskaityti: https://javascript.info/async
+  Savaitės bėgyje pasidaryti tutorial: https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+  tutorial:
+    promises 1	https://youtu.be/QO4NXhWo_NM
+    promises 2	https://youtu.be/AwyoVjVXnLk
+    async/await 1	https://youtu.be/XO77Fib9tSI
+    async/await 2	https://youtu.be/chavThlNz3s
+    promise.all	https://youtu.be/01RTj1MWec0
+    try/catch	https://youtu.be/BztW_u6HDbs
+
+Fetch:
+  1) Puslapyje paspaudus ant mygtuko "Generuoti vartotoją", po apačia turi būti sukurta vartotojo kortelė, kurioje bus atvaizduoti vartotojo duomenys (minimum: Vardas, Pavardė, amžius, šalis, elPaštas, nuotrauka).
+  Random vartotojas gaunamas iš https://randomuser.me/api/.
+  Vėl paspaudus ant mygtuko "Generuoti vartotoją", vietoj esamo atsiras naujas. (neprikurti puslapio su 999 vartotojais)
+  2) Duomenis pasiimsime iš: https://magnetic-melon-yam.glitch.me
+    2.1) Naudojant tik JS, sukurkite lentelę ir į ją įrašykite duomenis (id, name, city, fav_color).
+    2.2) Naudojant JS metodus, padalinkite vardą į dvi dalis: vardą ir pavardę (lentelėje).
+    2.3) Pridėkite prie lentelės (tarp id ir name) nuotrauką.
+    2.4+) Sukurkite checkbox virš lentelės su JS. Jį paspaudus, rodys tik tuos žmones, kurie yra VIP.
+    2.5+) Sukurkite virš lentelės ir search laukelį (forma su input type search ir mygtukas). Suvedus duomenis, lentelėje turi prasifiltruoti pagal vardą arba pavardę (fullname contains search string). Capitalizacija turėtų būti nesvarbi.

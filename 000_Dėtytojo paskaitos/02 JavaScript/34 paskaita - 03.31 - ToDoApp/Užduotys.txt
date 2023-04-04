@@ -12,3 +12,7 @@ Aplikacijoje reikia turėti galimybes:
 3) Patobulinti aplikaciją taip, kad elementai būtų sukuriami iš duomenų kintamojo.
 4) Patobulinti aplikaciją taip, kad duomenys keistųsi, priklausomai nuo vartotojo atliekamų veiksmų vartotojo sąsajoje. Kai sukuriamas naujas elementas - pasipildytų duomenys; kai ištrinamas esantis elementas - jis būtų išimamas iš duomenų; kai pažymimas kaip atliktas arba neatlikas - duomenyse pasikeistų jo atlikimo statusas.
 5) Patobulinti aplikaciją taip, kad duomenys būtų saugojami, trinami arba redaguojami localStorage'e.
+
+6+) Patobulinti aplikaciją taip, kad būtų galima redaguoti esamų task'ų pavadinimus (tekstus). (vietoj to, kad netyčia padarius klaidą kuriant, nereiktų jo trinti ir kurti per naują). Paredagavus task'o pavadinimą, task'as privalo tapti neatliktu (jeigu buvo neatliktas, tai niekas nesikeičia, jeigu buvo atliktas - tampa neatliktu (kas be ko, po to galima vėl ant jo spustelti ir padaryti jį atliktu)).
+
+7++) Patobulinti aplikaciją taip, kad būtų galima nustatyti datą iki kada reikėtų atlikti task'ą. Redaguojant galima būtų redaguoti ir datą. Jeigu data peržengusi šiandienos ribą (galimai net valandas nustatinėti galima, tuomet tikrinti ar peržengusi dabartinį tikslų laiką) elementą stilizuoti dar kažkaip kitaip.

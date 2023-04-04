@@ -38,6 +38,7 @@ export default class OperateTask{
         padaryta.addEventListener('click',new TaskOperate().fPadaryta);
         id++;
         window.sessionStorage.setItem('id',id);
+        e.target.reset();
         return taskDiv;
    }
 }

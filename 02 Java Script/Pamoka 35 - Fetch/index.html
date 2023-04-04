@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoka 35 - Fetch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./task1.html"> TASK1.HTML</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section id="fetch">
+            <H1>Fetch</H1>
+            <h3><a href="https://randomuser.me/api/" target="_blank">Random duomenų puslapis </a><a href="https://jsonplaceholder.typicode.com/"> Dar vienas random</a><a href="https://wheretheiss.at/w/developer">Where is ISS </a><a href="https://www.themealdb.com/api.php">Meal API</a></h3>
+            <p>
+                Skirtas išgauti kažkokius duomenis laikomus faile arba svetainėje(ne facebook, bet spec. nuorodo API).
+                Iš API fetchinti duomenys gaunami JSON formatu.
+            </p>
+            <p>
+                Netinkama sintaksė :  <br>
+                //const res=fetch('https://jsonplaceholder.typicode.com/posts') <br>
+                //console.log(res);                                                 Netinka, nes grazins be duomenu, nes dar jie dar neatėjo.
+            </p>
+            <p>Browseryje reikia JSON formaterplėtinį turėti</p>
+            <section id="allPosts">
+                <!-- <div class="post">
+                <span>1</span>
+                <h1>Title</h1>
+                <p>
+                    body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt eos quae dolor possimus quasi porro ratione nisi aut ullam?
+                </p>
+                </div>
+                <div class="post">
+                <span>2</span>
+                <h1>Title</h1>
+                <p>
+                    body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt eos quae dolor possimus quasi porro ratione nisi aut ullam?
+                </p>
+                </div>
+                <div class="post">
+                <span>3</span>
+                <h1>Title</h1>
+                <p>
+                    body Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt eos quae dolor possimus quasi porro ratione nisi aut ullam?
+                </p>
+                </div> -->
+            </section>
+        </section>
+    </main>
+</body>
+</html>
