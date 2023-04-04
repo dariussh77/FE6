@@ -1,0 +1,51 @@
+{
+  "zmones": [
+    {
+      "id": 1,
+      "vardas": "Rokas",
+      "pavarde": "Banaitis",
+      "amzius": 26,
+      "vedes": false,
+      "lytis": "vyras",
+      "profileImage": "https://cdn.shopify.com/s/files/1/0467/4977/8069/products/547-peace_was_never_an_option_300x300.jpg"
+    },
+    {
+      "id": 3,
+      "vardas": "Onutė",
+      "pavarde": "Onukauskaitė",
+      "amzius": 25,
+      "vedes": true,
+      "lytis": "moteris",
+      "profileImage": "https://cdn.shopify.com/s/files/1/0467/4977/8069/products/547-peace_was_never_an_option_300x300.jpg"
+    },
+    {
+      "vardas": "Johnny",
+      "pavarde": "Bravo",
+      "amzius": 66,
+      "vedes": false,
+      "lytis": "vyras",
+      "profileImage": "https://www.giantbomb.com/a/uploads/scale_small/3/34651/3393937-johnny_bravo.png",
+      "id": 4
+    }
+  ],
+  "automobiliai": [
+    {
+      "id": 1,
+      "marke": "Audi",
+      "modelis": "TT",
+      "gamybosMetai": 2010
+    },
+    {
+      "id": 3,
+      "marke": "Fiat",
+      "modelis": "Punto",
+      "gamybosMetai": 2001
+    },
+    {
+      "marke": "BMW",
+      "modelis": "6",
+      "gamybosMetai": 2020,
+      "id": 4
+    }
+  ]
+}

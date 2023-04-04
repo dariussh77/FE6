@@ -4,21 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P19</title>
+    <title>P36 - JSON serveris ir Fetch metodai</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="icon" type="icon" href="./images/andromeda.png">
-    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
     <header style="background-color: bisque;position:sticky;top:0;">
-        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a></h4>
+        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a><a href="./scripts/zmogus.js"> zmogus.js</a><a href="./scripts/data.json"> Data.json</a></h4>
         <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
     </header>
     <main style="scroll-padding-top: 200px;">
-        
+        <section id="teorija">
+            <h1>JASON serveris</h1>
+            <ol>
+                <li><h3><a href="https://nodejs.org/en" target="_blank">Susiinstaliuojame iš: https://nodejs.org/en - pasirenkame LTS download</a></h3></li>
+                
+                <li><h3>Sukuriame JSON serveri- Paleidziame konsoleje: npm install -g json-server</h3></li>
+                <li><h3>Patikrinti comand eilutėje: json-server -v</h3></li>
+
+                <li><h3>Susikuriam data.json faila</h3></li>
+                <li><h3>Iskonsolinti :Json.stringify(data) - ir paimti is Devtoool</h3></li>                
+                <li><h3><a href="https://jsonlint.com/" target="_blank">Ikeliame is Devtool i Jasonlin.com ir format</a></h3></li>
+                <li><h3>Is Jsonlint.com Nukopiname i data.json</h3></li> 
+                <li><h3>Naviguojame iki data.json failiuko - komandinėje eilutėje</h3></li> 
+                <li><h3>Paleidziame data.json pajungima - :$ json-server --watch data.json </h3></li> 
+                <li><h3>Atsidarome narsykleje Json serverio puslapi : (is command)   <a href="http://localhost:3000" target="_blank">http://localhost:3000</a></h3></li> 
+            </ol>
+            <hr>
+            <H1>JSON metodai</H1>
+            <H3>Get metodas</H3>
+            <p>
+                    fetch('http://localhost:3000/automobiliai') <br>
+                        .then(res => res.json()) <br>
+                        .then(data => { <br>
+                        console.log(data); <br>
+                    })
+            </p>
+            <H3>Get specific metodas</H3>
+            <p>
+                fetch('http://localhost:3000/automobiliai/2') // 2- antras ID Nr<br>
+                    .then(res => res.json()) <br>
+                    .then(data => { <br>
+                    console.log(data); <br>
+                })
+            </p>
+            <H3>DELETE metodas - galima pasidaryti begalini ciklą, jei kreipiamės tesiogiai, o ne per listening</H3>
+            <p>
+                fetch('http://localhost:3000/automobiliai/2', {method: 'DELETE'});
+            </p>
+            <H3>POST metodas - galima pasidaryti begalini ciklą, jei kreipiamės tesiogiai, o ne per listening</H3>
+            <p>
+                fetch ( 'http://localhost:3000/automobiliai' , <br> {method:'POST', <br> 
+                header: {'Content-Type' : 'application/json'} , <br>
+                body: JSON.stringify({marke: 'BMW' , modelis: '6' ,gamybosMetai : 2020 }) <br> })<br>
+            </p>
+            <p>
+                C - create - 2 <br>
+                R - read - 1 <br>
+                U - update - 4 <br>
+                D - delete - 3 <br>
+
+            </p>
+        </section>
+        <hr>
+        <section id="newCard">
+            <h1>Praktika kartu:</h1>
+            <form>
+              <input type="text" name="vardas" id="vardas" placeholder="Įveskite vardą..."><br>
+              <input type="text" name="pavarde" id="pavarde" placeholder="Įveskite pavardę..."><br>
+              <input type="number" step="1" name="amzius" id="amzius" placeholder="Įveskite amžių...">
+              <div>
+                    <label for="vedes">Esi vedęs/tekėjusi?</label>
+                    <input type="checkbox" name="vedes" id="vedes">
+              </div>
+              <div>
+                    <label for="vyras">Vyras</label>
+                    <input type="radio" name="lytis" id="vyras" value="vyras">
+                    <label for="moteris">Moteris</label>
+                    <input type="radio" name="lytis" id="moteris" value="moteris">
+              </div>
+              <input type="url" name="profileImage" id="profileImage" placeholder="Pateikite savo nuotrauką..."><br>
+              <input type="submit" value="Pateikti">
+            </form>
+        </section>
+        <br>
+        <hr>
+          
+        <section id="cards">
+        <h1>All Cards</h1>
+            <div id="allCards">
+            <!-- <div class="card">
+                    <h1>Vardas Pavardė</h1>
+                    <img src="https://cdn.shopify.com/s/files/1/0467/4977/8069/products/547-peace_was_never_an_option_300x300.jpg" alt="profile foto">
+                    <p>Amžius: skaičius</p>
+                    <p>Šeimyninis statusas: vedęs/ištėkėjusi</p>
+                    <button>Delete this card</button>
+                </div> -->
+            </div>
+        </section>
     </main>
 </body>
 </html>
+<!-- <img src="https://picsum.photos/id/823/600/400" alt=""> -->

@@ -1,0 +1,75 @@
+{
+  "asmenys": [
+    {
+      "id": 1,
+      "vardas": "Rokas",
+      "pavarde": "Banaitis",
+      "amzius": 27,
+      "vedes": true,
+      "lytis": "vyras",
+      "profileImage": "https://picsum.photos/id/1011/600/400"
+    },
+    {
+      "id": 2,
+      "vardas": "Darius",
+      "pavarde": "Šilinskas",
+      "amzius": 47,
+      "vedes": true,
+      "lytis": "vyras",
+      "profileImage": "https://picsum.photos/id/1014/600/400"
+    },
+    {
+      "id": 3,
+      "vardas": "Ramūnas",
+      "pavarde": "Urbonas",
+      "amzius": 45,
+      "vedes": true,
+      "lytis": "vyras",
+      "profileImage": "https://picsum.photos/id/1013/600/400"
+    },
+    {
+      "id": 3,
+      "vardas": "Domas",
+      "pavarde": "Adomaitis",
+      "amzius": 16,
+      "vedes": false,
+      "lytis": "moteris",
+      "profileImage": "https://picsum.photos/id/1012/600/400"
+    },
+    {
+      "vardas": "Matas",
+      "pavarde": "Šilinskas",
+      "amzius": 10,
+      "vedes": false,
+      "lytis": "vyras",
+      "profileImage": "https://picsum.photos/id/823/600/400",
+      "id": 1680639387231
+    },
+    {
+      "vardas": "",
+      "pavarde": "",
+      "amzius": null,
+      "vedes": false,
+      "lytis": "",
+      "profileImage": "",
+      "id": 1680641178122
+    }
+  ],
+  "auto": [
+    {
+      "id": 1,
+      "pavadinimas": "Audi",
+      "modelis": "A4"
+    },
+    {
+      "id": 3,
+      "pavadinimas": "Volga",
+      "modelis": "Kremlin"
+    },
+    {
+      "id": 2,
+      "pavadinimas": "ZAZAS",
+      "modelis": "Kurmis"
+    }
+  ]
+}
