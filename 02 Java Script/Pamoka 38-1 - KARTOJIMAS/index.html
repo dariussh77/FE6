@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P19</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js"  defer></script>
+</head>
+<body>
+    <header>
+        <ul>
+                <li><a href="#kintamieji">kintamieji</a></li>
+                <li><a href="#salygos">salygos</a></li>
+                <li><a href="#ciklai">ciklai</a></li>
+                <li><a href="#funkcijos">funkcijos</a></li>
+                <li><a href="#node">node</a></li>
+                <li><a href="#formos">formos</a></li>
+                <li><a href="#metodai">metodai</a></li>
+                <li><a href="#destrukturizavimas">destrukturizavimas</a></li>
+                <li><a href="#klases">klases</a></li>
+                <li><a href="#moduliai">moduliai</a></li>
+                <li><a href="#klases">klases</a></li>
+                <li><a href="#dataStorage">dataStorage</a></li>
+                <li><a href="#fetch">fetch</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+
+        </ul>
+  <!--       <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe> -->
+    </header>
+    <main>
+        <section id="kintamieji">
+            <h1>Kintamieji</h1>
+            <ul>
+                <li>string</li>
+                <li>number</li>
+                <li>boolean</li>
+                <li>object</li>
+            </ul>
+        </section> 
+        <section id="aritmetika">
+            <ul>
+                <li>+ - atliekama ir  tarp žodiniu kintamuju</li>
+                <li>-</li>
+                <li>*</li>
+                <li>/</li>
+                <li>a**b - kėlimas laipsniu -</li>
+                <li>**(1/n)- šaknis</li>
+                <li>% - liekana</li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="salygos">
+            <h1>Sąlygos</h1>
+            <h2>Palyginimai</h2>
+            <p>true arba false - yra truthy arba falthy.</p>
+            <ul>
+                <li>></li>
+                <li><</li>
+                <li>=></li>
+                <li>=<</li>
+                <li>== - lygu</li>
+                <li>=== - lygu ir tipai lygūs</li>
+                <li>!=</li>
+                <li>!==</li>
+                <li>! -(Not)</li>
+                <li>&& - and</li>
+                <li>|| -or</li>
+            </ul>
+            <h2>Sąlygos</h2>
+            <ul>
+                <li>if(){}else if{}else();</li>
+                <li>switch() case salyga:1+1; </li>
+                <li>? : - ternary</li>
+                <li>&& - logical And</li>
+            </ul>
+        </section>
+        <section id="ciklai">
+            <h1>Ciklai</h1>
+            <p>Vykdyti veiksmus daug kartu</p>
+            <ul>
+                <li>for</li>
+                <li>while</li>
+                <li>for of</li>
+                <li>for in</li>
+                <li>do while</li>
+                <li><a href="#metodai">Iteraciniai metodai</a></li>
+            </ul>
+        </section>
+        <section id="funkcijos">
+            <h1>Funkcijos</h1>
+            <p>
+                Funkcijose esamas kodas, vykdomas tik tuomet, kai funkcija iškviečia. Ir perpanaudojama. Funkcijai galima paduoti skirtingus parametrus ir gauname skirtingus atsakymas. <br>
+                funkcija perduodame kaip parametra - callback
+                
+            </p>
+            <img width=300px src="https://i.stack.imgur.com/9lg1H.png" alt="">
+            <ul>
+                <li>function A (){} - paprasta</li>
+                <li>const name=()=>{} - arrow</li>
+                <li>function(){}- bevarde</li>
+                <li>()=>{} - bavarde arrow</li>
+            </ul>
+        </section>
+        <section id="node">
+            <h1>Node</h1>
+            <h2>Selektinimas</h2>
+            <p>Iš JS kreipiamasi(CSS sintakse) i HTML ir selektinama elementai.</p>
+            <ul>
+                <li>querySelector('') - grazina pirma </li>
+                <li>querySelectorAll(''selekt) - grazina kaip Nodelist(masyvas)</li>
+                <li>getElementById('id')</li>
+                <li>getElementByClassName('class')</li>
+                <li>getElementByTagname('tagName')</li>
+            </ul>
+            <h2>Eventai</h2>
+            <p>Laukiame veiksmo -pvz.click,submit- ir vykdoma fukcija.</p>
+            <p>node.addEvent Listening('click', ()=>{})</p>
+            <h2>Kurimas</h2>
+            <p>Galima kurti ir ikelti elementus per JS. <br>
+                tiems elementams galima suteikti įvaires savybes(eventus, atributus, kitus elementus)</p>
+            <h4>Komandos:</h4>
+                <ul>
+                    <li>Node.createElement</li>
+                    <li>Node.createTaxtNode</li>
+                    <li>Node.append</li>
+                    <li>Node.appendChild</li>
+                    <li>Node.classList.add</li>
+                    <li>Node.classList.remove</li>
+                    <li>Node.classList.contains</li>
+                    <li>Node.setAtribute()</li>
+                    <li>......</li>
+                </ul>
+        </section>
+        <section id="formos">
+            <h1>Formų  nuskaitymas</h1>
+            <p>
+                Forma nuskaitoma po evento submit. <br>
+                Per Js sulauke formos pateikimaą: suteikiame 
+                e.prevent default;
+            </p>
+        </section>
+        <section id="metodai">
+            <h1>Metodai</h1>
+            <p>Metodas- funkcija, priskiriame objektui, masyvui</p>
+            <h2>Masyvu metodai</h2>
+            <p>Jų daug ir jie visi iteraciniai per visa masyvą</p>
+            <h4>systax:</p>
+            <p>masyvas.imetodas((masyvoelemnta,iteracija, arba visa masyva)=>{})</p>
+            <h2>Metodų ivairovė</h2>
+            <ul>
+                <li>Sring</li>
+                <li>Number</li>
+                <li>Math</li>
+                <li>Arry</li>
+                <li>Object</li>
+                <li>Date</li>
+                <li>Json</li>
+                <li>Global objects......</li>
+            </ul>
+        </section>
+        <section id="destrukturizavimas">
+            <h1>Destruktūrizavimas</h1>
+            <p>
+                Iįardyti objekta, masyva, gaunamus argumentus į mažesne sdalis.
+            </p>
+            <p> Is funkcija, metoda ar klase gaunamas vienas didelis parametras ir galima iskaidyti i atskirus dalis</p>
+        </section>
+        <section id="moduliai">
+            <h1>Moduliai</h1>
+            <p>
+                vieno failo duomenu(kintamieji, klases funkcijos) perdavimas kitus failus.Import Export.
+            </p>
+        </section>
+        <section id="klases">
+            <h1>Klasės</h1>
+            <p>
+                Klasės yra skirtos kurti objektus. <br>
+                Yra funkcijų 
+            </p>
+            <H3>Pagrindiniai klasės pricipai</H3>
+            <ul>
+                <li>Incapsuliacija - viskas viduje</li>
+                <li>Abstakcija - susparastina kuriamo objekto naudojimą</li>
+                <li>Paveldimumas- kuriant klases galima paveldėti kitas klases</li>
+                <li>Polimorfizmas - tos pačios klasės objektai, gali turėti skirtingus</li>
+            </ul>
+        </section>
+        <section id="dataStorage">
+            <h1>DataStorage</h1>
+            <p>Duomenų saugojimas, kad atidarius puslapį gautume buvusios sesijos veiksmai</p>
+            <ul>
+                <li>cookies</li>
+                <li>localStorage - window.localStorage.setItem('g','b');</li>
+                <li>sessionStorage - window.sessionStorage.setItem('g','b');</li>
+                <li>JSON - let jsonStringify=JSON.stringify({vardas:'Darius'})
+                    let nebeJSON=JSON.parse(jsonStringify)</li>
+                <li>DB(SQL)</li>
+            </ul>
+        </section>
+        <section id="fetch">
+            <h1>Fetch</h1>
+        </section>
+
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+        <section id=""></section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -4,21 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P19</title>
+    <title>P37 -Crud praktika - Žvaigždžių sarąšas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="icon" type="icon" href="./images/andromeda.png">
-    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
     <header style="background-color: bisque;position:sticky;top:0;">
-        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a></h4>
+        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a>  <a href="./scripts/starcard.js"> StarCards.js</a>   <a href="./scripts/stars.json"> Stars.json</a></h4>
         <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
     </header>
+    <hr>
     <main style="scroll-padding-top: 200px;">
-        
+        <section id="forma">                
+            <H3>Įveskite:</H3>
+            <form>
+                <div>
+                    <input type="text" id="name" name="name" placeholder="...žvaiždės vardą">
+                    <input type="text" id="constalation" name="constalation" placeholder="...žvaigždyną"> 
+                    <input type="text" id="startype" name="startype" placeholder="...žvaigždės tipą">
+                    <input type="number" step="0.001" id="mass" name="mass" placeholder="...masę Saulėmis">
+                    <input type="number" step="0.001" id="absBright" name="absBright" placeholder="...absoliutų ryškį">
+                    <input type="number" step="0.001" id="age" name="age" placeholder="...amžių">
+                    <input type="number" step="0.001" id="distance" name="distance" placeholder="...nuotolį">
+                    <input type="number" step="0.001" id="visBright" name="visBright" placeholder="...matomą ryškį">
+                </div>
+                <div>
+                    <label for="evolutionStage">Evoliucinis žvaigždės tarpsnis:</label>
+                    <select name="evolutionStage" id="evolutionStage">
+                        <option value="Protožvaigždė">Protožvaigždė</option>
+                        <option value="Rudoji nykštukė">Rudoji nykštukė</option>
+                        <option value="Raudonoji nykštukė">Raudonoji nykštukė</option>
+                        <option value="Saulės tipo žvaigždė">Saulės tipo žvaigždė</option>
+                        <option value="Raudonoji Gigantė">Raudonoji Gigantė</option>
+                        <option value="Mėlynoji Gigantė">Mėlynoji Gigantė</option>
+                        <option value="Baltoji nykštukė">Baltoji nykštukė</option>
+                        <option value="Neutroninė žvaigždė">Neutroninė žvaigždė</option>
+                        <option value="1A tip supernova">1A tip supernova</option>
+                        <option value="2 tipo supenova">2 tipo supenova</option>
+                        <option value="Supernova">Supernova</option>
+                        <option value="Juodoji skylė">Juodoji skylė</option>
+                        <option value="Gigantinė Juodoji skylė">Gigantinė Juodoji skylė</option>
+                        <option value="Kvazaras">Kvazaras</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="rect">Koordinatės žvaigždėlapyje:</label>
+                    <input type="text" id="rect" name="rect" placeholder="...00h00m00s">
+                    <input type="text" id="decl" name="decl" placeholder="...-00.00.00">
+                </div>
+                <div>
+                    <label for="src">Įkelkite nuotrauką:</label>
+                    <input type="text" id="src" name="src" placeholder="...nuotraukos URL">
+                    <input type="text" id="alt" name="alt" placeholder="...nuotraukos Alt tekstą">                    
+                </div>
+                <input type="submit" value="Įvesti">
+
+            </form>
+        </section>
+        <hr>
+            <section id="sectionFilter">
+                <form>
+                    <label for="">Pasirinkite Evoliucinį etapą</label>
+                    <select name="evolutionStageF" id="evolutionStageF">
+                        <option value="...Pasirinkti visas...">...Pasirinkti visas...</option>
+                        <option value="Protožvaigždė">Protožvaigždė</option>
+                        <option value="Rudoji nykštukė">Rudoji nykštukė</option>
+                        <option value="Raudonoji nykštukė">Raudonoji nykštukė</option>
+                        <option value="Saulės tipo žvaigždė">Saulės tipo žvaigždė</option>
+                        <option value="Raudonoji Gigantė">Raudonoji Gigantė</option>
+                        <option value="Mėlynoji Gigantė">Mėlynoji Gigantė</option>
+                        <option value="Baltoji nykštukė">Baltoji nykštukė</option>
+                        <option value="Neutroninė žvaigždė">Neutroninė žvaigždė</option>
+                        <option value="1A tip supernova">1A tip supernova</option>
+                        <option value="2 tipo supenova">2 tipo supenova</option>
+                        <option value="Supernova">Supernova</option>
+                        <option value="Juodoji skylė">Juodoji skylė</option>
+                        <option value="Gigantinė Juodoji skylė">Gigantinė Juodoji skylė</option>
+                        <option value="Kvazaras">Kvazaras</option>
+                    </select>   
+                    <input type="submit" value="Filtruoti">
+                </form>
+                
+            </section>
+        <hr>
+        <section id="isvedimas">
+<!--             <div class="allStars">
+                <div class="starCard">
+                    <h3>Betelgeizė</h3>
+                    <img src="https://picsum.photos/id/598/600/400" alt="Valtis">
+                    <p><b>Žvaigždynas: </b>Orionas</p>
+                    <p><b>Evoliucinis etapas: </b>Raudonoji milžinė</p>
+                    <p><b>Tipas: </b>M1_M2 Ia_ab</p>
+                    <p><b>Absoliutus ryškis: </b>-5.85</p>
+                    <p><b>Amžius: </b> 10010000 metai</p>
+                    <p><b>Nuotolis nuo Saulės: </b>642.5 šviesmečiai</p>
+                    <ul><b>Koordinatės žvaigždėlapyje:</b>
+                        <li>Rektascensija: 5h55m10s</li>
+                        <li>Deklinacija: +7.24.26</li>
+                    </ul>
+                </div>
+            </div> -->
+        </section>
     </main>
 </body>
 </html>

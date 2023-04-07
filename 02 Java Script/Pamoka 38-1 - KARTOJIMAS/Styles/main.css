@@ -1,0 +1,21 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    width: 200px;
+    background-color: antiquewhite;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+}
+main{
+    margin-left: 200px;
+}
+footer{
+    height: 100vh;
+}
+

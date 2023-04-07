@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04.06 - Kartojimas</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="#kintamieji">Kintamieji</a></li>
+      <li><a href="#aritmetika">Aritmetika</a></li>
+      <li><a href="#salygos">Sąlygos</a></li>
+      <li><a href="#ciklai">Ciklai</a></li>
+      <li><a href="#funkcijos">Funkcijos</a></li>
+      <li><a href="#node">NODE</a></li>
+      <li><a href="#formos">Formos</a></li>
+      <li><a href="#metodai">Metodai</a></li>
+      <li><a href="#destrukturizavimas">Destruktūrizavimas</a></li>
+      <li><a href="#moduliai">Moduliai</a></li>
+      <li><a href="#klases">Klasės</a></li>
+      <li><a href="#dataStorage">Data Storage</a></li>
+      <li><a href="#fetch">Fetch</a></li>
+    </ul>
+  </header>
+  <main>
+    <section id="kintamieji">
+      <h1>Kintamieji</h1>
+      <p>
+        Kintamieji skirti saugoti/laikyti įvairią informaciją programos veikimo metu.
+      </p>
+      <ul>
+        <li>string - tekstas</li>
+        <li>number - skaičius</li>
+        <li>boolean - loginis</li>
+        <li>array - masyvas</li>
+        <li>object - objektas</li>
+      </ul>
+    </section>
+    <section id="aritmetika">
+      <h1>Aritmetika</h1>
+      <p>
+        Kažkokie veiksmai atliekami tarp duomenų/kintamųjų.
+      </p>
+      <ul>
+        <li>+ - sudėtis</li>
+        <li>- - atimtis</li>
+        <li>* - daugyba</li>
+        <li>/ - dalyba</li>
+        <li>** - kėlimas laipsniu</li>
+        <li>**(1/y) - šaknies traukimas</li>
+        <li>% - liekanos gavimas</li>
+      </ul>
+    </section>
+    <section id="salygos">
+      <h2>Palyginimai</h2>
+      <p>
+        Palygini keletą duomenų. Ir palyginimas grąžina true arba false.
+      </p>
+      <ul>
+        <li>> - daugiau</li>
+        <li>< - mažiau</li>
+        <li>>= - daugiau arba lygu</li>
+        <li><= - mažiau arba lygu</li>
+        <li>== - lygu (reikšmės)</li>
+        <li>=== - lygu (reikšmės ir tipai)</li>
+        <li>!= - nelygu (reikšmės)</li>
+        <li>!== - nelygu (reikšmės ir tipai)</li>
+        <li>! - (NOT) - apverčia boolean reiškmę</li>
+        <li>&& - (AND) - tikrina ar abejose pusėse sąlyga grąžina true</li>
+        <li>|| - (OR) - tikrina ar bent vienoje pusėje sąlyga grąžina true</li>
+      </ul>
+      <h1>Sąlygos</h1>
+      <p>
+        Kodas sąlygų viduje vykdomas tik tokiu atveju, jeigu sąlyga grąžina tiesą.
+      </p>
+      <ul>
+        <li>if(){} else if(){} else{}</li>
+        <li>switch() case:</li>
+        <li>? : - (ternary)</li>
+        <li>&& - (logical AND)</li>
+      </ul>
+    </section>
+    <section id="ciklai">
+      <h1>Ciklai</h1>
+      <p>
+        Ciklai yra naudojami norint vykdyti tuos pačius arba labai panašius veiksmus daugelį kartų.
+      </p>
+      <ul>
+        <li>for</li>
+        <li>while</li>
+        <li>for of</li>
+        <li>for in</li>
+        <li>do while</li>
+        <li><a href="#metodai">iteraciniai metodų ciklai</a></li>
+      </ul>
+    </section>
+    <section id="funkcijos">
+      <h1>Funkcijos</h1>
+      <p>
+        Funkcijose esamas kodas vykdosi TIK tuomet, kai funkcija yra iškviečiama.<br>
+        Funkcija gali būti iškviečiama daugelį kartų.<br>
+        Funkcija priima parametrus (duomenis), su kuriais atlieka kažkokius veiksmus. Kreipiantis į funkciją yra perduodami argumentai (duomenys).<br>
+        Funkcija gali grąžinti kažkokį rezultatą.<br>
+        Funkcijos gali būti perduotos kaip parametrai ir tuomet iškviečiamos; tai vadinama - callback.<br>
+        callback'ai dažniausiai aprašomi kaip bevardės funkcijos. Tokiu atveju jų nereikia perduoti kaip parametrų.
+      </p>
+      <ul>
+        <li>function name(){} - paprasta funkcija</li>
+        <li>const name = () => {} - arrow/lambda funkcija</li>
+        <li>function(){} - bevardė funkcija</li>
+        <li>() => {} - bevardė arrow funkcija</li>
+      </ul>
+    </section>
+    <section id="node">
+      <h1>NODE</h1>
+      <h2>Selektinimas</h2>
+      <p>
+        Iš JS kreipiamasi į HTML ir selektinama (taip pat kaip ir CSS'e) kažkoks arba kažkokie elementai.
+      </p>
+      <ul>
+        <li>querySelector('selektorius') - grąžina pirmą rastą elementą kaip Node'ą</li>
+        <li>querySelectorAll('selektorius') - grąžina visus rastus elementus kaip NodeList'ą(beveik tas pats kas masyvas)</li>
+        <li>Senieji:
+          <ul>
+            <li>getElementById('id')</li>
+            <li>getElementsByClassName('class')</li>
+            <li>getElementsByTagName('tagName')</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Event'ai</h2>
+      <p>
+        Laukiama kol kažkokiam NODE elementui įvyks nurodytas veiksmas (pvz.: paspaudimas, pelėsUžėjimas...) ir tuomet vykdoma nurodyta funkcija.
+      </p>
+      <p>
+        NODE.addEventListener('click', funkcija)
+      </p>
+      <h2>Kūrimas</h2>
+      <p>
+        Galima kurti ir įkelti HTML elementus per JS'ą.<br>
+        Tiems sukurtiems elementams, galima suteikti įvairias savybes (event'us, atributus, kitusElementus...)
+      </p>
+      <h4>Komandos</h4>
+      <ul>
+        <li>NODE.createElement()</li>
+        <li>NODE.createTextNode()</li>
+        <li>NODE.append()</li>
+        <li>NODE.appendChild()</li>
+        <li>NODE.classList.add()</li>
+        <li>NODE.classList.remove()</li>
+        <li>NODE.classList.contains()</li>
+        <li>NODE.setAttribute()</li>
+        <li>NODE.remove()</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section id="formos">
+      <h1>Formų nuskaitymas</h1>
+      <p>
+        Forma yra nuskaitoma po to kai įvyksta formos submit event'as.<br>
+        Per JS'ą, sulaukę formos pateikimo, sustabdome puslapio persikrovimą su event.preventDefault() ir susirenkame formos įvesčių laukuose pateiktą informaciją. <br>
+        Pateiktą informaciją susirenkame kreipdamiesi į formos elementų vardus/id.
+      </p>
+    </section>
+    <section id="metodai">
+      <h1>Metodai</h1>
+      <p>
+        Metodas yra funkcija, priskirta kažkuriam specifiniui objektui/masyvui.
+      </p>
+      <h2>Masyvų metodai</h2>
+      <p>
+        Funkcijos skirtos tik masyvams. Jų yra labai daug ir įvairių.<br>
+        Masyvai turi iteracinius metodus. Jie skirtu sukti ciklą per visą masyvą ir atlikti kažkokius veiksmus su kiekvienu masyvo elementu.
+      </p>
+      <h4>Syntax</h4>
+      <p>
+        masyvas.iteracinisMetodas((masyvoElementas, iteraciją, visasMasyvas) => { veiksmai... })
+      </p>
+      <h2>Metodų įvairovė</h2>
+      <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Math</li>
+        <li>Array</li>
+        <li>Object</li>
+        <li>Date</li>
+        <li>JSON</li>
+        <li>Global_Objects...</li>
+      </ul>
+    </section>
+    <section id="destrukturizavimas">
+      <h1>Destruktūrizavimas</h1>
+      <p>
+        Išardyti objektą/masyvą/gaunamusParametrus... į mažesnes dalis.
+      </p>
+      <p>
+        Į funkciją/metodą/klasę gaunamas vienas DIDELIS parametras ir iš jo galima pasiimti tik reikalingas reikšmes.<br>
+        Galima spread'inti masyvą į atskirus gabaliukus.
+      </p>
+    </section>
+    <section id="moduliai">
+      <h1>Moduliai</h1>
+      <p>
+        Vieno failo duomenų(kintamieji, klasės, funkcijos...) perdavimas į kitus failus.<br>
+        Export ir Import
+      </p>
+    </section>
+    <section id="klases">
+      <h1>Klasės</h1>
+      <p>
+        Klasės yra skirtos kurti objektams.<br>
+        Klasei galima perduoti argumentus, kuriuos klasė konstruktoriaus viduje priima ir pasivadina kažkokiais pavadinimais, kuriuos naudoja visos klasės viduje.<br>
+      </p>
+      <h3>Pagrindiniai klasės principai</h3>
+      <ul>
+        <li>Inkapsuliacija - viskas ko klasei reikia yra jos viduje</li>
+        <li>Abstrakcija - supaprastina kuriamo objekto naudojimą</li>
+        <li>Paveldimumas - kuriant klases galima paveldėti kitas klases</li>
+        <li>Polimorfizmas - tos pačios klasės objektai, gali turėti skirtingas struktūras</li>
+      </ul>
+    </section>
+    <section id="dataStorage">
+      <h1>Data Storage</h1>
+      <p>
+        Duomenų saugojimas. Tam kad kiekvieną kartą paleista programa neprasidėtų nuo 0. Būtų atsimenami kažkokie tai vartotojo veiksmai.
+      </p>
+      <ul>
+        <li>cookies</li>
+        <li>localStorage</li>
+        <li>sessionStorage</li>
+        <li>JSON</li>
+        <li>DB (SQL - good, noSQL, ...)</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section id="fetch">
+      <h1>Fetch</h1>
+      <p>
+        Fetch skirtas tam, kad būtų galima kreiptis į kokį nors API ir iš jo perduoti/pasiimti/redaguoti/trinti duomenis.
+      </p>
+      <h3>Metodai</h3>
+      <ul>
+        <li>GET - gauna duomenis</li>
+        <li>POST - nusiunčia duomenis</li>
+        <li>DELETE - trina duomenį pagal ID</li>
+        <li>PATCH - lopyja duomenį pagal ID</li>
+        <li>PUT - perrašo duomenį pagal ID</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
