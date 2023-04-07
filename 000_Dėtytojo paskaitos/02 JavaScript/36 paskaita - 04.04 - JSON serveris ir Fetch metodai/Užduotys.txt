@@ -1,5 +1,0 @@
-1) Susikonspektuoti ką šiandien išmokom:
-  1.1) JSON serveris
-  1.2) Fetch metodai (GET, POST, DELETE)
-
-2) Pasitilizuoti šiandienos dalykus...

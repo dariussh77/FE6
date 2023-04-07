@@ -1,0 +1,60 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Išvedimas */
+.allStars{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 5px dashed red;
+    justify-content: space-around;
+}
+.starCard{
+    box-shadow: 10px 10px 10px 10px grey;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.starCard>p{
+    font-size: 0.9rem;
+}
+.starCard li{
+    font-size: 0.7rem;
+}
+.starCard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.starCard ul{
+    list-style-position:inside;
+    padding: 0;
+} 
+.starCard h3{
+    text-align: center;
+} 
+.starCard button{
+    background-color: brown;
+    margin:0 100px 10px 100px;
+}
+/* Inputas */
+#forma>form{
+    display: flex;
+    justify-content: space-around;
+}
+#forma>form>div{
+    display: flex;
+    flex-direction: column;
+}
+#forma>h3{
+    text-align: center;
+}
+

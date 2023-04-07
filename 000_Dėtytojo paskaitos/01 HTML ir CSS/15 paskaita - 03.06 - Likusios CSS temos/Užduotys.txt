@@ -1,9 +1,0 @@
-Praktikuotis šiandienos temas:
-  Atkurti ./images/properties_HTML_CSS_Framework.PNG pavaizduotą svetainės vaizdą 
-(nereikia jokių funkcionalumų, mygtukai tik dėl vaizdo ten(ateityje sugrįšime prie 
-panašaus ir pridėsim funkcionalumus)) naudojant pasirinktą Framework'ą ARBA rašant savo stilius SCSS faile.
-
-Praktikuotis responsiveness:
-  Atkurti ./images/bibliotekaMobile|Desktop.png pavaizduotą svetainę naudojant MobileFirst dizaino
- principą (pradėti nuo Mobile įrenginio dydžio ir ties pasirinktu ekrano lūžio tašku (breakpoint) 
-pakeisti stilius į Desktop įrenginio dydį rašant @media (min-width:breakpoint)) (galima daryti šią užduotį naudojant SCSS).

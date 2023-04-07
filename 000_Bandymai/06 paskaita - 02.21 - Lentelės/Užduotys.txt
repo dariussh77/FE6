@@ -1,2 +1,0 @@
-1) Sukurti lentelę, kuri pavaizduota ./images/simpleTableTask.png paveikslėlyje.
-2) Sukurti lentelę, kuri pavaizduota ./images/tableNice.png paveikslėlyje. (vietoj varnelių, dėti + ženkliuką)

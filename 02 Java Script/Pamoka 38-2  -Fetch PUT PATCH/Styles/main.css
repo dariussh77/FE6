@@ -3,6 +3,14 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+body{
+    margin: 10px;
+}
+#allCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 .card{
     width:300px;
     height: 150px;
