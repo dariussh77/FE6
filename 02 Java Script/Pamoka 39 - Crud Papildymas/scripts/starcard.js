@@ -15,13 +15,26 @@ export default class StarCard{
         return this.fstarCard();
     }
     fstarCard(){
+        this.iMasyvas=[];
         //console.log(this.photo.src);
         this.starCardDiv=document.createElement('div');
         this.starCardDiv.classList.add('starCard');
 
+        this.buttonE=document.createElement('button');
+        this.buttonE.classList.add('edit');
+        this.buttonEI=document.createElement('i');
+        this.buttonEI.classList.add('bi' , 'bi-pen');
+        this.buttonE.appendChild(this.buttonEI);
+        
+
+
         this.heading=document.createElement('h3');
-        this.headingText=document.createTextNode(this.name);
-        this.heading.append(this.headingText);
+        this.headingB=document.createElement('b');
+        this.headingI=document.createElement('i');
+        this.headingIText=document.createTextNode(this.name);
+        this.headingI.appendChild(this.headingIText)
+        this.heading.append(this.headingB, this.headingI);
+        this.iMasyvas.push(this.headingI);
 
         this.img=document.createElement('img');
         this.img.setAttribute('src', this.photo.src);
@@ -29,60 +42,84 @@ export default class StarCard{
 
         this.consP=document.createElement('p');
         this.consB=document.createElement('b');
+        this.consI=document.createElement('i');
         this.consBText=document.createTextNode('Žvaigždynas: ');
-        this.consPText=document.createTextNode(this.constalation);
+        this.consIText=document.createTextNode(this.constalation);
         this.consB.append(this.consBText);
-        this.consP.append(this.consB,this.consPText);
+        this.consI.append(this.consIText);
+        this.consP.append(this.consB,this.consI);
+        this.iMasyvas.push(this.consI);
 
         this.evoP=document.createElement('p');
         this.evoB=document.createElement('b');
+        this.evoI=document.createElement('i');
         this.evoBText=document.createTextNode('Evoliucinis etapas: ');
-        this.evoPText=document.createTextNode(this.evolutionStage);
+        this.evoIText=document.createTextNode(this.evolutionStage);
         this.evoB.append(this.evoBText);
-        this.evoP.append(this.evoB,this.evoPText);
+        this.evoI.append(this.evoIText);
+        this.evoP.append(this.evoB,this.evoI);
+        this.iMasyvas.push(this.evoI);
 
         this.stypeP=document.createElement('p');
         this.stypeB=document.createElement('b');
+        this.stypeI=document.createElement('i');
         this.stypeBText=document.createTextNode('Žvaigždės tipas: ');
-        this.stypePText=document.createTextNode(this.startype);
+        this.stypeIText=document.createTextNode(this.startype);
         this.stypeB.append(this.stypeBText);
-        this.stypeP.append(this.stypeB,this.stypePText);
+        this.stypeI.append(this.stypeIText);
+        this.stypeP.append(this.stypeB,this.stypeI);
+        this.iMasyvas.push(this.stypeI);
 
 
         this.massP=document.createElement('p');
         this.massB=document.createElement('b');
+        this.massI=document.createElement('i');
         this.massBText=document.createTextNode('Žvaigždės masė Saulėmis: ');
-        this.massPText=document.createTextNode(this.mass);
+        this.massIText=document.createTextNode(this.mass);
         this.massB.append(this.massBText);
-        this.massP.append(this.massB,this.massPText);
+        this.massI.append(this.massIText);
+        this.massP.append(this.massB,this.massI);
+        this.iMasyvas.push(this.massI);
 
         this.absP=document.createElement('p');
         this.absB=document.createElement('b');
+        this.absI=document.createElement('i');
         this.absBText=document.createTextNode('Absoliutus ryškis: ');
-        this.absPText=document.createTextNode(this.absBright);
+        this.absIText=document.createTextNode(this.absBright);
         this.absB.append(this.absBText);
-        this.absP.append(this.absB,this.absPText);
+        this.absI.append(this.absIText);
+        this.absP.append(this.absB,this.absI);
+        this.iMasyvas.push(this.absI);
 
         this.ageP=document.createElement('p');
         this.ageB=document.createElement('b');
+        this.ageI=document.createElement('I');
         this.ageBText=document.createTextNode('Amžius milijonais metų: ');
-        this.agePText=document.createTextNode(this.age);
+        this.ageIText=document.createTextNode(this.age);
         this.ageB.append(this.ageBText);
-        this.ageP.append(this.ageB,this.agePText);
+        this.ageI.append(this.ageIText);
+        this.ageP.append(this.ageB,this.ageI);
+        this.iMasyvas.push(this.ageI);
 
         this.distP=document.createElement('p');
         this.distB=document.createElement('b');
+        this.distI=document.createElement('I');
         this.distBText=document.createTextNode('Nuotolis šviesmečiais: ');
-        this.distPText=document.createTextNode(this.distance);
+        this.distIText=document.createTextNode(this.distance);
         this.distB.append(this.distBText);
-        this.distP.append(this.distB,this.distPText);
+        this.distI.append(this.distIText);
+        this.distP.append(this.distB,this.distI);
+        this.iMasyvas.push(this.distI);
       
         this.visbP=document.createElement('p');
         this.visbB=document.createElement('b');
+        this.visbI=document.createElement('i');
         this.visbBText=document.createTextNode('Matomas ryškumas: ');
-        this.visbPText=document.createTextNode(this.visBrigth);
+        this.visbIText=document.createTextNode(this.visBrigth);
         this.visbB.append(this.visbBText);
-        this.visbP.append(this.visbB,this.visbPText);
+        this.visbI.append(this.visbIText);
+        this.visbP.append(this.visbB,this.visbI);
+        this.iMasyvas.push(this.visbI);
         
         this.coordU=document.createElement('ul');
         this.coordBU=document.createElement('b');
@@ -101,8 +138,10 @@ export default class StarCard{
         this.button.append(this.buttonText);
         this.trinti();
         
-        this.starCardDiv.append(this.heading, this.img, this.consP,this.evoP,this.stypeP,this.massP, this.absP,this.ageP,this.distP,this.visbP,this.coordU,this.button);
+        this.starCardDiv.append(this.buttonE,this.heading, this.img, this.consP,this.evoP,this.stypeP,this.massP, this.absP,this.ageP,this.distP,this.visbP,this.coordU,this.button);
 
+        this.editMain();
+        
 
         return this.starCardDiv;
     }
@@ -114,4 +153,50 @@ export default class StarCard{
         });
         })
     }
-}
+    editMain(){
+        this. eventas=this.buttonE.addEventListener('click',this.f=e=>{
+            console.log(e);
+            console.log('Paspaustas Edit Main', this.name);
+            console.log(this.iMasyvas);
+            this.buttonS=document.createElement('button');
+            this.buttonS.classList.add('save');
+            this.buttonSI=document.createElement('i');
+            this.buttonSI.classList.add('bi' , 'bi-save-fill');
+            this.buttonS.appendChild(this.buttonSI);
+            this.starCardDiv.append(this.buttonS);
+            this.iInputMasyvas=this.iMasyvas.map(el => {
+                this.input=document.createElement('input');
+                this.input.setAttribute('value', el.textContent);
+                this.newI=el.appendChild(this.input);
+                el.removeChild(el.firstChild); 
+                return el;         
+            });
+            this.buttonE.removeEventListener('click',this.f);
+            console.log(this.iInputMasyvas);
+            this.keys=['name','constalation','evolutionStage','startype','mass','absBright','age','distance', 'visBright'];
+            this.i=0;
+            this.buttonS.addEventListener('click',this.f2=()=>{
+                this.iInputMasyvas.forEach(elmn=>{
+                    this.newIText=document.createTextNode(elmn.childNodes[0].value);
+                    this.key=this.keys[this.i];
+                    elmn.append(this.newIText);
+                    this.newdata={[this.key]:elmn.childNodes[0].value};
+                    console.log(this.newdata);
+                    elmn.removeChild(elmn.firstChild);
+                    this.buttonE.addEventListener('click',this.f);
+                    fetch(`http://localhost:3000/stars/${this.id}`,{
+                        method:"PATCH",
+                        headers:{"Content-Type":"application/json"},
+                        body: JSON.stringify(this.newdata)
+                    });
+                    this.buttonS.remove();
+                    this.i++;
+                });
+                
+                this.buttonS.removeEventListener('click',this.f2);
+            });
+            });
+
+        };
+        
+    }
