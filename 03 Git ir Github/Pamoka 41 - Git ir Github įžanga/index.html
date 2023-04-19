@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P41 Git ir Github įžanga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="icon" type="icon" href="./images/andromeda.png">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+    <header style="background-color: bisque;position:sticky;top:0;">
+        <h4><a href="./scripts/main.js"> Main.js </a><a href="./Styles/main.css"> Main.css</a><a href="./index_task.html"> Index_TASK.HTML</a></h4>
+        <iframe src="./scripts/main.js" frameborder="0" width="100%" height="200px"></iframe>
+    </header>
+    <main style="scroll-padding-top: 200px;">
+        <section id="git">
+            <h1>Git</h1>
+            <p>
+                Git - populiariausia kodo versijavimo programa.
+            </p>
+            <h2>Git Komandos be configu</h2>
+            <ul>
+                <li>init - sukuria repozitoriją</li>
+                <li>add - pridedama nurodytus arba visus failus(stage)</li>
+                <li>status - nurodo lokalios git repozitorijos statusą. "Your branch is up to date with 'origin/master'"" - nurodo, kad tavo kodas naujausias</li>
+                <li>commit -m "žinutė" - sukuria kodo versiją iš addintu(stagintu) failu ir prideda žinutę apie pakitimus.(žinutė iki 50 simbolių) </li>
+                <li>push - iš lokalios repozitorijos nauju pakeitmų išsiuntimas į išorinę repozitoriją</li>
+                <li>pull - iš išorinės atsisiuntimas į lokalią</li>
+                <li>remote add orige-  dažniausiai vykdoma vien kartą prijungiant  lokalią prie išorinės</li>
+                <li>log - comitų sąrašą, q - išeiti</li>
+                <li>checkout branchName|commitId - išsikvieti pakeitima - cheout master - grįžimas prie pagridinio</li>
+                <li>branch naujaŠaka - sukuria šaką</li>
+                <li>git push --set-upstream origin branch1 -  supušinti naują branchą</li>
+                <li>clone htttps://.... - nuklonuoja išorinę repozitoriją</li>
+            </ul>
+
+            
+
+            <ul>Pirmasis Github paleidimas per Git:
+                <li>git init - paleisti naują git repositoriją - nevykdyti jau esamos git repositorijos viduje</li>
+                <li>git status - patikrinti pakitimus</li>
+                <li>git add . - prideti pirmus failus. "."- reikia visus faulus su visais katalogais.</li>
+                <li>git commit -m 'pirmas komitas' - komitinimas su žinute (m) </li>
+                <li> git remote add origin 'https://github.com/dariussh77/Test2' - prijungia pri GIthub</li>
+                <li>git push -u origin master - atsiranda jau Githube</li>
+                
+            </ul>
+            <h2>GIT IGNORE</h2>
+            <p>Gitignorui reikia sukurti faila ".gitignore" šalia index.html</p>
+        </section>
+        <hr>
+        <section id="github">
+            <h1>Github</h1>
+            <p>
+                Github- viena iš svetainių kelti versijuotą kodą.
+            </p>
+            <p>
+                Sukurti nauja repositorija per Github.
+                Pasirenkame vardą, komentarą.
+                Git.ignore - pasirinkti failus, kurių gitas neseka.
+
+            </p>
+
+        </section>
+        <section id="links">
+            <h1>Extra links</h1>
+            <ul>
+              <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a></li>
+              <li><a href="https://rogerdudler.github.io/git-guide/" target="_blank">Git Quick Guide</a></li>
+              <li><a href="https://youtu.be/8JJ101D3knE" target="_blank">Mosh video about Git</a></li>
+              <li><a href="https://youtu.be/mJ-qvsxPHpY" target="_blank">Nick White video about Git</a></li>
+              <li><a href="https://youtu.be/DVRQoVRzMIY" target="_blank">Tech With Tim video about Git</a></li>
+            </ul>
+          </section>
+    </main>
+</body>
+</html>

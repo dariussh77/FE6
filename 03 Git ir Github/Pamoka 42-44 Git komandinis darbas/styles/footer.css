@@ -1,0 +1,99 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #202020;
+    margin: 0;
+}
+
+.socialMedia{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    color: white;
+    font-family: 'Golos Text', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: 'Golos Text', sans-serif;
+}
+.links a:hover{
+    color: #E62428;
+}
+.links li{
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+.logoAndName{
+    grid-column: 1/3;
+    grid-row: 2;
+    display: flex;
+    padding: 5px;
+    padding-top: 0;
+    justify-content: center;
+    color: rgb(197, 197, 197);
+    font-family: 'Golos Text', sans-serif;
+    font-size: 10px;
+    align-items: center;
+   gap: 1rem;
+    flex-direction: column;
+}
+
+#logo{
+    width: 40px;
+}
+
+.icons a li i{
+
+    color: rgb(255, 255, 255);
+}
+
+.icons a{
+    text-decoration: none;
+}
+.icons a :hover{
+    color: #E62428;
+}
+.icons a li{
+    display: inline;
+    margin-right: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+#subscr{
+    display: inline;
+}
+
+.logoPart{
+    display: flex;
+    gap: 1rem;
+}
+#emailButton:hover{
+  background-color: #E62428;
+  border: none;
+}
+#emailButton{
+    border: none;
+    height: 17px;
+}

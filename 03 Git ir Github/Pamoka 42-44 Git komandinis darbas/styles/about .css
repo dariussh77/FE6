@@ -1,0 +1,50 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,200;1,400;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+main{
+  background-color:  #ececec;
+}
+#team{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#team h1{
+  text-align: center;
+}
+.developers{
+    padding: 50px;
+    width: 800px;
+    display: grid;
+    grid-template: 1fr*6/1fr*5;
+}
+.developers>img{
+    opacity: 70%;
+    width: 100%;
+    object-fit: fill;
+}
+.developers>img:nth-child(1){
+    grid-row: 1 / 4;
+    grid-column: 2/5;
+    z-index: 1;
+}
+.developers>img:nth-child(2){
+    grid-row: 2 / 5;
+    grid-column: 4/7;;
+}
+.developers>img:nth-child(3){
+    grid-row: 3/ 6;
+    grid-column: 1/4;;
+}
+.developers>img:nth-child(4){
+    grid-row: 4/ 7;
+    grid-column: 3/6;;
+}
+#trailer{
+    height: 100vh;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}

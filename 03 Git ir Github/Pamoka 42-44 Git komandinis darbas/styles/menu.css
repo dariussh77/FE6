@@ -1,0 +1,47 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+#navBar{
+  padding: 5px 50px;
+  margin-bottom: 10px;
+  background-color:#202020;
+  color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#navBar > div > a {
+  padding: 2px;  
+  text-decoration: none;
+  color: whitesmoke;
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+}
+#navBar > div > a:after{
+  content: "";
+  position: absolute;
+  background-color: rgb(223, 5, 56);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+#navBar > div > a:hover:after{
+  width: 100%;
+}
+#navBar > img{
+  width: 5rem;
+  padding-left: 15%;
+}
+#navBar > div {
+  padding-right: 25%;
+}

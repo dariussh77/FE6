@@ -1,0 +1,80 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+@import url(modal.css);
+
+:root {
+  --txtColor: #222222;
+  --bgColor: #ececec;
+}
+
+html {
+  font-family: 'Golos Text', sans-serif;
+  color: var(--txtColor);
+  background-color: var(--bgColor);
+}
+
+section {
+  padding: 30px;
+  width: 70%;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+div[id=filter] {
+  background-color: var(--bgColor);
+}
+
+div[id=eventCards] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+div[id=eventCards] p {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 18px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  padding-bottom: 20px;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
+}
+
+.card>img {
+  width: 100%;
+  object-fit: contain;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.date {
+  position: absolute;
+  top: 180px;
+  padding: 10px 20px;
+  background-color: #e62427e9;
+  color: white;
+}
+.padding{
+  padding: 15px;
+}
+
+.card>p {
+  font-weight: 600;
+}
+
+.card>p:hover {
+  color: #e62427;
+}

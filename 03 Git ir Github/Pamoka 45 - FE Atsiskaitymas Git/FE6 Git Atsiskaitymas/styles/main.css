@@ -1,0 +1,209 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgba(0, 0, 0, 0.2) url(../resources/bg.jpg);
+    background-blend-mode:darken;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../resources/bg-overlay.png);
+    background-position: center;
+    background-repeat: repeat;
+    padding: 200px 20px 50px 20px;
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.germ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border:1px solid white;
+    border-radius: 45px;
+}
+.germ>img{
+    height: 37px;
+}
+.meta{
+    color: white;
+}
+.upspace{
+    display: flex;
+    justify-content: center;
+}
+.upspace>div{
+    width: 46vw;
+    height: 50px;
+   border-bottom: 1px solid white; 
+}
+.upspace>div:first-child{
+    border-right: 1px solid white;
+}
+.upspace>div:last-child{
+    border-left: 1px solid white;
+}
+.meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.meta>h1{
+    padding-top:20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.meta>p{
+    height: 120px;
+    min-width: 300px;
+    line-height: 2rem;
+    font-weight: 100;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+}
+.meta>p>a{
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-style:dotted;
+    cursor: pointer;
+}
+.meta>p>a:hover{
+    color: rgb(71, 114, 214);
+}
+.downspace{
+    display: flex;
+    justify-content: center;
+}
+.downspace>div{
+    width: 46vw;
+    height: 50px;
+   border-top: 1px solid white; 
+}
+.downspace>div:first-child{
+    border-right: 1px solid white;
+}
+.downspace>div:last-child{
+    border-left: 1px solid white;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttons>div{
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    height: 50px;
+    color: white;
+    border: 1px solid white;
+    width: 92vw;
+}
+#buttons>div:hover{
+    background-color:  rgba(255, 255, 255, 0.113);
+}
+#tabs>div{
+    width:270px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(24, 24, 24, 0.859);
+}
+#tabs>div>h1{
+    text-transform: uppercase;
+    color:white;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    letter-spacing: 7px;
+}
+#tabs>div>img{
+    border-radius: 5px;
+}
+#tabs>div>iframe{
+    border: none;
+}
+#tabs>div>p{
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    color: white;
+}
+#tabs>div>p>i{
+    vertical-align:bottom;
+    font-size: 30px;
+}
+.x{
+    position: absolute;
+    right:20px;
+    top:20px;
+    animation-play-state: paused;
+}
+.x>img{
+    width:30px
+}
+/* animacija */
+.x:hover {
+    transform: rotate(0deg);
+    transform-origin: center;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-name: suktukas;
+}
+@keyframes suktukas {
+    0% {
+        transform: rotate(90deg);
+    }
+}
+.displayNone{
+    display:none !important;
+}
+
+
+/* mobile first */
+@media (min-width:840px){
+    main{
+        background-size:contain;
+        background-repeat: repeat;
+        padding: 250px 20px 50px 20px;
+    }
+    #buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #buttons>div{
+        width:170px;
+    }
+    .meta>h1{
+        padding-top:10px;
+        font-size: 40px;
+    }
+    #tabs>div{
+        width:800px;
+        padding: 20px;
+    }
+    .meta>p{
+        height: 50px;
+    }
+}
