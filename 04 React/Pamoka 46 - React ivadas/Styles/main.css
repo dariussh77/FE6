@@ -3,3 +3,13 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-size: medium;
+}
+body{
+    padding: 20px;
+}
+#hero>img{
+    width: 100px;
+}
+
