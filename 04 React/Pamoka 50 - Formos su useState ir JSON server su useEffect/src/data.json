@@ -1,0 +1,39 @@
+{
+  "countries": [
+    {
+      "id": 0,
+      "status": "lankyta",
+      "name": "Lietuva",
+      "image": "https://picsum.photos/id/191/600/400",
+      "description": "Lithuania, officially the Republic of Lithuania, is a country in the Baltic region of Europe. It is one of three Baltic states and lies on the eastern shore of the Baltic Sea. Lithuania shares land borders with Latvia to the north, Belarus to the east and south, Poland to the south, and Russia to the southwest."
+    },
+    {
+      "id": 1,
+      "status": "lankyta",
+      "name": "Azerbaidžanas",
+      "image": "https://picsum.photos/id/192/600/400",
+      "description": "Azerbaidžano istorija yra labai artimai susijusi su kitų Irano tautų istorija. I tūkst. pr. m. e. čia gyveno tauta medai, ir regionas buvo vadinamas Medija. Nuo VI a. pr. m. e. dalis ir priklausė Persijos Achemenidų imperijai. Po Aleksandro Makedoniečio užkariavimų tapo savarankiška Atropatenės satrapija. Vėliau vėl buvo užkariauta persų (Sasanidų). Romos imperijos laikais čia keletą šimtmečių gyvavo Albanijos valstybė, dėl kurios varžėsi Bizantija ir Persija."
+    },
+    {
+      "id": 3,
+      "status": "nelankyta",
+      "name": "Azerbaidžanas",
+      "image": "https://picsum.photos/id/195/600/400",
+      "description": "Azerbaidžano istorija yra labai artimai susijusi su kitų Irano tautų istorija. I tūkst. pr. m. e. čia gyveno tauta medai, ir regionas buvo vadinamas Medija. Nuo VI a. pr. m. e. dalis ir priklausė Persijos Achemenidų imperijai. Po Aleksandro Makedoniečio užkariavimų tapo savarankiška Atropatenės satrapija. Vėliau vėl buvo užkariauta persų (Sasanidų). Romos imperijos laikais čia keletą šimtmečių gyvavo Albanijos valstybė, dėl kurios varžėsi Bizantija ir Persija."
+    },
+    {
+      "id": 4,
+      "status": "nelankyta",
+      "name": "Azerbaidžanas",
+      "image": "https://picsum.photos/id/194/600/400",
+      "description": "Azerbaidžano istorija yra labai artimai susijusi su kitų Irano tautų istorija. I tūkst. pr. m. e. čia gyveno tauta medai, ir regionas buvo vadinamas Medija. Nuo VI a. pr. m. e. dalis ir priklausė Persijos Achemenidų imperijai. Po Aleksandro Makedoniečio užkariavimų tapo savarankiška Atropatenės satrapija. Vėliau vėl buvo užkariauta persų (Sasanidų). Romos imperijos laikais čia keletą šimtmečių gyvavo Albanijos valstybė, dėl kurios varžėsi Bizantija ir Persija."
+    },
+    {
+      "id": 5,
+      "status": "nelankyta",
+      "name": "Azerbaidžanas",
+      "image": "https://picsum.photos/id/193/600/400",
+      "description": "Azerbaidžano istorija yra labai artimai susijusi su kitų Irano tautų istorija. I tūkst. pr. m. e. čia gyveno tauta medai, ir regionas buvo vadinamas Medija. Nuo VI a. pr. m. e. dalis ir priklausė Persijos Achemenidų imperijai. Po Aleksandro Makedoniečio užkariavimų tapo savarankiška Atropatenės satrapija. Vėliau vėl buvo užkariauta persų (Sasanidų). Romos imperijos laikais čia keletą šimtmečių gyvavo Albanijos valstybė, dėl kurios varžėsi Bizantija ir Persija."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+header{
+    padding: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+}
+header>img{
+    border-radius: 50px;
+}
+#straipsniai{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+}
+#straipsniai>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+    width: 300px;
+    position: relative;
+}
+#straipsniai>div>img{
+    width: 100%;
+}
+#straipsniai>div>input{
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+#straipsniai>div>h3{
+    color: bisque;
+    margin: 0;
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+.raudona{
+    border: 3px solid red;
+}
+.zalia{
+    border: 3px solid green;
+}
+#forma>form>input{
+    width: 300px;
+}
