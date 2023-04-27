@@ -1,0 +1,150 @@
+{
+  "prekes": [
+    {
+      "id": "b00dfc32-8289-433f-ae1c-be94d0472185",
+      "prekesTipas": "Kompiuterija",
+      "pavadinimas": "Nešiojamas kompiuteris",
+      "nuotrauka": "https://picsum.photos/id/8/300/200",
+      "specifikacija": "Intel7, Ram - 16GB, SSD - 1TB, Touchscreen ",
+      "kaina": 500,
+      "kiekis": 60
+    },
+    {
+      "id": "a4a7c9bb-ecae-4705-b7a3-ba1773d16f07",
+      "prekesTipas": "Indai",
+      "pavadinimas": "Puodelis Cuba",
+      "nuotrauka": "https://picsum.photos/id/30/300/200",
+      "specifikacija": "Puodelis su ausele. Užrašas Cuba ",
+      "kaina": 3,
+      "kiekis": 62
+    },
+    {
+      "id": "7149354b-5604-4bb5-85cd-c2d48fd5d621",
+      "prekesTipas": "Media",
+      "pavadinimas": "Patefonas",
+      "nuotrauka": "https://picsum.photos/id/39/300/200",
+      "specifikacija": "Retro stiliaus patefonas. 30W kolonėles. 12V maitinimas",
+      "kaina": 100,
+      "kiekis": 74
+    },
+    {
+      "id": "8a770cf6-6434-41d6-9353-8fcf0f3b9eca",
+      "prekesTipas": "Transporto priemonės",
+      "pavadinimas": "Retro dviratis",
+      "nuotrauka": "https://picsum.photos/id/76/300/200",
+      "specifikacija": "1 pavara, žalias. ",
+      "kaina": 50,
+      "kiekis": 6
+    },
+    {
+      "id": "dbaa1295-1e3e-4a56-b941-f4fb248089ae",
+      "prekesTipas": "Transporto priemonės",
+      "pavadinimas": "Traktorius",
+      "nuotrauka": "https://picsum.photos/id/85/300/200",
+      "specifikacija": "MTZ40. 40 arklio jėgų. Dėvėtas",
+      "kaina": 2000,
+      "kiekis": 7
+    },
+    {
+      "id": "34bb25b0-b5c2-44d1-894c-c86d93c43c06",
+      "prekesTipas": "Kompiuterija",
+      "pavadinimas": "Žaidimų pultelis",
+      "nuotrauka": "https://picsum.photos/id/96/300/200",
+      "specifikacija": "Bevielis pultelis, skirtas PS4,PC, Xbox konsolėms",
+      "kaina": 70,
+      "kiekis": 77
+    },
+    {
+      "id": "b6ae4271-6f43-49cc-900e-6a3355a21d1e",
+      "prekesTipas": "Transporto priemonės",
+      "pavadinimas": "Retro automobilis",
+      "nuotrauka": "https://picsum.photos/id/111/300/200",
+      "specifikacija": "30-jų policijos automobilis. 20 arklio jėgų",
+      "kaina": 10000,
+      "kiekis": 7
+    },
+    {
+      "id": "cd78a303-7c3f-4ef4-80fe-c6f5b9481024",
+      "prekesTipas": "Transporto priemonės",
+      "pavadinimas": "Triratukas",
+      "nuotrauka": "https://picsum.photos/id/146/300/200",
+      "specifikacija": "Triratukas su signalizacija. Ratai trys. 1 vaiko galia.",
+      "kaina": 80,
+      "kiekis": 77
+    },
+    {
+      "id": "47112edc-6e3d-435f-9aef-2c57cfabf079",
+      "prekesTipas": "Kompiuterija",
+      "pavadinimas": "Mobilus telefonas",
+      "nuotrauka": "https://picsum.photos/id/160/300/200",
+      "specifikacija": "AMR, Ram - 4GB, 128ROM, Touchscreen",
+      "kaina": 300,
+      "kiekis": 77
+    },
+    {
+      "id": "6eab796c-bd98-4bb5-9b8e-c5057e8bde47",
+      "prekesTipas": "Smulkmena",
+      "pavadinimas": "Laikrodis",
+      "nuotrauka": "https://picsum.photos/id/175/300/200",
+      "specifikacija": "Mechaninis stalinis laikrodis. Trys rodyklės",
+      "kaina": 55,
+      "kiekis": 77
+    },
+    {
+      "id": "244b34c9-2ad6-4a65-85ac-ad1cbadb58da",
+      "prekesTipas": "Transporto priemonės",
+      "pavadinimas": "Laivelis",
+      "nuotrauka": "https://picsum.photos/id/211/300/200",
+      "specifikacija": "Žvejybinis laivelis. Dyzelinis motoras. Skirtas stintų žvejybai.",
+      "kaina": 7000,
+      "kiekis": 77
+    },
+    {
+      "id": "93ffc6d9-9ac3-4930-a07d-b94ce818f1dc",
+      "prekesTipas": "Indai",
+      "pavadinimas": "Arbatos komplektas",
+      "nuotrauka": "https://picsum.photos/id/225/300/200",
+      "specifikacija": "Stiklinis arbatos indelis su filtru. Mini cukrinė",
+      "kaina": 20,
+      "kiekis": 77
+    },
+    {
+      "id": "f01b3b90-ba8a-4642-8780-75e50ea17c1f",
+      "prekesTipas": "Media",
+      "pavadinimas": "Fotoaparatas",
+      "nuotrauka": "https://picsum.photos/id/250/300/200",
+      "specifikacija": "Juostinis retro fotoaparatas. 40mm juostelės. Su blykste",
+      "kaina": 140,
+      "kiekis": 77
+    },
+    {
+      "id": "5a1e778b-e7e1-43ca-bafc-9efba629597d",
+      "prekesTipas": "Indai",
+      "pavadinimas": "Medaus komplektas",
+      "nuotrauka": "https://picsum.photos/id/312/300/200",
+      "specifikacija": "Medaus plaktukas, keramikinis indelis medui",
+      "kaina": 60,
+      "kiekis": 77
+    }
+  ],
+  "vartotojai": [
+    {
+      "id": 0,
+      "vardas": "Darius",
+      "admin": true,
+      "slaptazodis": "Labas"
+    },
+    {
+      "id": 1,
+      "vardas": "Jonas",
+      "admin": false,
+      "slaptazodis": "Jonas"
+    },
+    {
+      "id": 2,
+      "vardas": "Petras",
+      "admin": false,
+      "slaptazodis": "Petras"
+    }
+  ]
+}
