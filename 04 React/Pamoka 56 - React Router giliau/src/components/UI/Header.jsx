@@ -1,15 +1,26 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-const StyledHeader =styled.header`
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
-    >nav>ul{
-        list-style-type:none;
-        display: flex;
-        gap:10px;
-        
+const StyledHeader = styled.header`
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+
+  > nav > ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    a{
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold;
     }
+    a.active{
+      color: green;
+    }
+  }
 `;
 const Header = () => {
     return ( 
@@ -19,10 +30,10 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li><NavLink to='/'>Home</NavLink></li>
+                    <li><NavLink to='/'>Homes</NavLink></li>
+                    <li><NavLink to='/books'>Books</NavLink></li>
                 </ul>
             </nav>
-
         </StyledHeader>
      );
 }
